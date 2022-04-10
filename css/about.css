@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+body {margin:0;}        
+
+
+/*Navigation Bar*/
+.navbar
+{                      
+  display: flex;
+  background-color:black;
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 20px;
+}
+
+li 
+{
+  display: inline;
+  float: left;
+  padding-left: 15px;
+}
+
+li a 
+{
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color:white;
+}
+
+li a:hover 
+{
+  background-color: #1f4cc7;
+}
+
+
+
+/*About Us Cards*/
+.column 
+{
+  float: left;
+  width: 33.3%;  
+}
+  
+.card 
+{
+  width: 300px;
+  height: 400px;
+}
+  
+.about-section 
+{
+  padding: 50px;
+  background-color: #1f4cc7;
+  color: white;
+}
