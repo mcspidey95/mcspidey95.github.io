@@ -1,151 +1,322 @@
 <!DOCTYPE html>
-<head><!--Tab name & icon, and import statements-->
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Page Flow</title>
-    <link rel="icon" href="./images/logo.png" type="image/icon type">
+    <title>cLOTHING</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<body>
 
-<!--Navigation Bar-->
-<body style="font-family: Quicksand; background-color: #121212;  color:#E6E6E6;">
-    <nav class="navbar">
-        <li><img src="./images/logo_2.png" style="height: 25px; width: 25px; vertical-align: middle;"></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="login.html">Login</a></li>
-    </nav>
-
-
-    <!--Main Page-->
-    <div class="main">
-        <center><h1 style="font-size: 95px; color: white;"><br>Welcome to PageFlow</h1>
-        <p style="font-size: 20px; color: white;">Your one stop shop for all e-books!</p>
-        <a href="products.html" class="btn"> Explore </a>
-        </center>
-    </div>
-
-
-    <!--Featured Products-->
-    <div style="padding: 35px;">
-        <h2>Featured Products</h2>
-        <div class="gallery">
-            <div class="image-holder">
-                
-                    <img src="./images/th8.jfif" alt="img-1">
-                
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo" width="125px">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" alt="cart" width="30px" height="30px">
             </div>
-            <div class="image-holder">
-                
-                    <img src="./images/img_3.jpeg" alt="img-2">
-                
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Body<br>A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about 
+                    consistency. Consistent<br>hard work gains success. Greatness 
+                    will come.</p>
+                    <a href="" class="btn">Explore Now &#10148;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png">
+                </div>
             </div>
-            <div class="image-holder">
-                
-                    <img src="./images/th6.jfif" alt="img-3">
-                
-            </div>
-            <div class="image-holder">
-                
-                    <img src="./images/img_5.jpg" alt="img-4">
-                
-            </div>
-            <div class="image-holder">
-                
-                    <img src="./images/img_6.jpg" alt="img-5">
-                
-            </div>
-            <div class="image-holder">
-                
-                    <img src="./images/img_7.jpg" alt="img-6">
-                
-            </div>
-            <div class="image-holder">
-                
-                    <img src="./images/img_8.jpg" alt="img-7">
-                
-            </div>
-            <div class="image-holder">
-                
-                    <img src="./images/img_9.jpg" alt="img-8">
-                
-            </div>
-            <div class="image-holder">
-                
-                    <img src="./images/Adv1.jfif" alt="img-9">
-                
-            </div>
-            <div class="image-holder">
-                
-                    <img src="./images/img_11.jpg" alt="img-10">
-                
-            </div>
-
-
-        </div>
-
-    </div>
-    
-
-    <!--Featured Brands-->
-    <div class="section-4" style="padding:35px;">
-        <h2>Featured Brands</h2>
-        <div class="brand" style="width: 20%; display: inline;">
-            <img src="./images/book_logo_1.png" alt="Chronicle Books">
-        </div>
-        <div class="brand">
-            <img src="./images/book_logo3.png" alt="Atlantic Books">
-        </div>
-        <div class="brand">
-            <img src="./images/book_logo_2.jpg" alt="Book House">
-        </div>
-        <div class="brand">
-            <img src="./images/book_logo_4.png" alt="Orca Book Publishers">
-        </div>
-        <div class="brand">
-            <img src="./images/book_logo_5.png" alt="Book Bird">
         </div>
     </div>
 
+<!--------- featured categories -------->
 
-    <!--Contact Us-->
-    <div class="section-5" style="padding:35px;">
-        
-        <h2 style="padding:25px;">Contact Us</h2>
-              
-
-              <div class="column">
-                <form >
-                    <fieldset>
-                    <legend>leave us a message or suggestion:</legend> 
-
-                  <label for="fname"><br>First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Harold">
-
-                  <label for="lname"><br>Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Jenkins">
-
-                  <label for="country">Country<br></label>
-                  <select style="font-family: Quicksand; color: white" id="country" name="country">
-                    <option value="india">India</option>
-                    <option value="india">China</option>
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="india">North Korea</option>
-                    <option value="usa">USA</option>
-                  </select>
-
-                  <label for="subject"><br>Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-
-                  <input type="submit" value="Submit">
-                </fieldset>
-                </form>
-              </div>
-
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg">
+                </div>
+            </div>
+        </div>
     </div>
+
+<!--------- featured products -------->
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹1200</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹600</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>₹999</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹450</p>
+            </div>
+        </div>
+
+
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹1200</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹600</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>₹999</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹450</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹1200</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹600</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>₹999</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹450</p>
+            </div>
+        </div>
+    </div>
+
+<!------ offer ------->
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on cLOTHING</p>
+                    <h1>Smart Band 4</h1>
+                    <small>The Mi Smart Band 4 features a 39.9% larger(than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as it can be.<br></small>
+                    <a href="" class="btn">Buy Now &#10148;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------- brands ----------->
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------- footer ---------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download our App for Android and iOS devices.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Clothing Accessible to Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li><a href="https://www.instagram.com/mcspidey95">Instagram</a></li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - mcspidey95</p>
+        </div>
+    </div>
+
 </body>
 </html>
