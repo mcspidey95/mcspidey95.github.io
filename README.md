@@ -1,2 +1,2 @@
-# pageflow.github.io
-ultimate gae bookstore (TOTALLY NOT SCAM)
+# clothes.github.io
+ultimate gae clothes store (TOTALLY NOT SCAM)
