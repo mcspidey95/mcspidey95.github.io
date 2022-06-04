@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products - cLOTHING</title>
+    <link rel="icon" href="images/logo-2.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo" width="125px">
+                </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="account.html">Login</a></li>
+                    <li><a href="account.html">Register</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" alt="cart" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!--------- single product details -------->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/buys-1.jpg" width="100%" id="productImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/buys-1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/buys-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/buys-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/buys-4.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p>Home / Exclusive</p>
+                <h1>Mi Smart Band 4</h1>
+                <h4>₹2,999</h4>
+                <select>
+                    <option>Select Color</option>
+                    <option>Black</option>
+                    <option>Red</option>
+                    <option>Orange</option>
+                    <option>Navy Blue</option>
+                    <option>White</option>
+                </select>
+                <input type="number" value="1">
+                <a href="cart.html" class="btn">Add To Cart</a>
+
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>The Mi Smart Band 4 features a 39.9% larger (than the Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as it can 
+                be.</p>
+            </div>
+        </div>
+    </div>
+
+    <!------- Title --------->
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href="products.html"><p>View More</p></a>
+        </div>
+    </div>
+
+<!------- product list --------->\
+
+    <div class="small-container">
+        
+        <div class="row">
+            <div class="row">
+                <div class="col-4">
+                    <a href="details9.html"><img src="images/product-9.jpg"></a>
+                    <h4>Roaster Watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹2200</p>
+                </div>
+    
+                <div class="col-4">
+                    <a href="details10.html"><img src="images/product-10.jpg"></a>
+                    <h4>HRX Running Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹600</p>
+                </div>
+    
+                <div class="col-4">
+                    <a href="details11.html"><img src="images/product-11.jpg"></a>
+                    <h4>Jaguar Running Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>₹999</p>
+                </div>
+    
+                <div class="col-4">
+                    <a href="details12.html"><img src="images/product-12.jpg"></a>
+                    <h4>Nike Black Trackpants</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₹750</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------- footer ---------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download our App for Android and iOS devices.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Clothing Accessible to Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Coupons</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=FNav6X3Bjho" target="_blank">Blog Post</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=H2MoWa7Akn0" target="_blank">Return Policy</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=9fGV8_6KuY4" target="_blank">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li><a href="https://www.twitter.com/spidey095" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/mcspidey95" target="_blank">Instagram</a></li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - mcspidey95</p>
+        </div>
+    </div>
+
+    <!----------- js for toggle -------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle()
+        {
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!----------- js for product gallery -------------->
+    <script>
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick = function()
+        {
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function()
+        {
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function()
+        {
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function()
+        {
+            productImg.src = smallImg[3].src;
+        }
+
+    </script>
+
+</body>
+</html> 
