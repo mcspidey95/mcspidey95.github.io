@@ -1,2 +1,2 @@
 # clothes.github.io
-ultimate gae clothes store (TOTALLY NOT SCAM)
+the ultimate clothes store (TOTALLY NOT SCAM)
