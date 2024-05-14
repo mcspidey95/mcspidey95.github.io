@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
+import pfp from "../../images/pfp.jpg";
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -128,6 +129,7 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.span`
+  margin-left: 5px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
 `;
@@ -184,6 +186,37 @@ export const ResumeButton = styled.a`
 
 `;
 
+export const Img = styled.img`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 50%;
+  border: 2px solid ${({ theme }) => theme.primary};
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  @keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 10px); }
+    100% { transform: translate(0, -0px); }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
+`;
+
 const hero = () => {
   return (
     <div id='about'>
@@ -198,7 +231,7 @@ const hero = () => {
             <ResumeButton href={Bio.resume} target='_blank'>Check Resume</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
-
+            <Img src={pfp} alt='pfp pic' />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
