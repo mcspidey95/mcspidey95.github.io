@@ -7,7 +7,7 @@ export const Bio = {
     ],
 
     description:
-      "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results and make a meaningful contribution and achieve great things.",
+      "A motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results and make a meaningful contribution and achieve great things.",
     github: "https://github.com/mcspidey95",
     resume: "https://drive.google.com/file/d/1oAQmq4RH-wttAFKkw3VazKwc793qybQw/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/mcspidey95/",
@@ -17,7 +17,7 @@ export const Bio = {
   
   export const skills = [
     {
-      title: "Frontend",
+      title: "Full Stack",
       skills: [
         {
           name: "React Js",
@@ -46,7 +46,7 @@ export const Bio = {
       ],
     },
     {
-      title: "Backend",
+      title: "AI & ML",
       skills: [
         {
           name: "Node Js",
@@ -65,7 +65,7 @@ export const Bio = {
       ],
     },
     {
-      title: "Android",
+      title: "Programming",
       skills: [
         {
           name: "Java",

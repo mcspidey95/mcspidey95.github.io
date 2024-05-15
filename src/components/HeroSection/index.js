@@ -135,7 +135,8 @@ export const Span = styled.span`
 `;
 
 export const Subtitle = styled.div`
-  font-size: 20px;
+  margin-top: 20px;
+  font-size: 16px;
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};
@@ -227,7 +228,7 @@ const hero = () => {
           <HeroLeftContainer>
             <Title>Hi, I am <br />{Bio.name}</Title>
             <TextLoop>I am <Span> <Typewriter options={{strings: Bio.roles, autoStart: true, loop: true}}></Typewriter></Span></TextLoop>
-            <Subtitle><br></br>{Bio.description}</Subtitle>
+            <Subtitle>{Bio.description}</Subtitle>
             <ResumeButton href={Bio.resume} target='_blank'>Check Resume</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
