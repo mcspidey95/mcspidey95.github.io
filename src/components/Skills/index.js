@@ -142,6 +142,7 @@ const Skills = () => {
             </Skill>
           ))}
         </SkillsContainer>
+        <br></br><br></br><br></br><br></br>
       </Wrapper>
     </Container>
   );
