@@ -256,13 +256,13 @@ const Navbar = () => {
               <MobileLink href='#skills' onClick={() => {
                 setOpen(!open)
                 }}>Skills</MobileLink>
-              <MobileLink href='#experience' onClick={() => {
+              <MobileLink href='#projects' onClick={() => {
                 setOpen(!open)
                }}>Experience</MobileLink>
-             <MobileLink href='#projects' onClick={() => {
+             <MobileLink href='#education' onClick={() => {
                setOpen(!open)
                }}>Projects</MobileLink>
-              <MobileLink href='#education' onClick={() => {
+              <MobileLink href='#tools' onClick={() => {
                 setOpen(!open)
                }}>Education</MobileLink>
               <GithubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href="https://github.com/mcspidey95" target="_blank">Github Profile</GithubButton>
