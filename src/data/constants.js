@@ -25,7 +25,7 @@ export const Bio = {
             "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
         },
         {
-          name: "Angular Js",
+          name: "Next Js",
           image:
             "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
         },
@@ -36,26 +36,26 @@ export const Bio = {
         {
           name: "CSS",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
         },
         {
           name: "JavaScript",
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
         },
-      ],
-    },
-    {
-      title: "AI & ML",
-      skills: [
         {
           name: "Node Js",
           image: "https://nodejs.org/static/images/logo.svg",
         },
         {
-          name: "Python",
+          name: ".Net",
           image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+              "https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg",
+        },
+        {
+          name: "Angluar Js",
+          image:
+            "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
         },
         {
           name: "MySQL",
@@ -65,27 +65,67 @@ export const Bio = {
       ],
     },
     {
+      title: "AI & ML",
+      skills: [
+        {
+          name: "Python",
+          image:
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        },
+        {
+          name: "Tensorflow",
+          image:
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
+        },
+        {
+          name: "Keras",
+          image:
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg",
+        },
+        {
+          name: "scikit-learn",
+          image:
+              "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+        },
+        {
+          name: "Pandas",
+          image:
+              "https://avatars.githubusercontent.com/u/21206976?s=200&v=4",
+        },
+        {
+          name: "Matplotlib",
+          image:
+              "https://upload.wikimedia.org/wikipedia/commons/0/01/Created_with_Matplotlib-logo.svg",
+        }
+      ],
+    },
+    {
       title: "Programming",
       skills: [
+        {
+          name: "Python",
+          image:
+              "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        },
         {
           name: "Java",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
         },
         {
-          name: "Kotlin",
+          name: "C",
           image:
-            "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+        },
+        {
+          name: "C#",
+          image:
+              "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
         },
         {
           name: "XML",
           image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
-        },
-        {
-          name: "Android Studio",
-          image:
-            "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
         },
       ],
     },
@@ -95,7 +135,7 @@ export const Bio = {
         {
           name: "Git",
           image:
-            "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
         },
         {
           name: "GitHub",
@@ -103,14 +143,14 @@ export const Bio = {
             "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
         },
         {
-          name: "Docker",
+          name: "Unity",
           image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg",
         },
         {
           name: "VS Code",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
         },
       ],
     },
@@ -119,57 +159,51 @@ export const Bio = {
   export const education = [
     {
       id: 0,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-      school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-      date: "Oct 2021 - Sep 2025",
-      grade: "8.71 CGPA",
-      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-      degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+      img: "https://content3.jdmagicbox.com/v2/comp/bangalore/f6/080pxx80.xx80.170412082210.w8f6/catalogue/presidency-university-yelahanka-bangalore-universities-si0nhgmmkz.jpg",
+      school: "Presidency University, Bangalore",
+      date: "2021 - 2025 (Ongoing)",
+      grade: "8.46 CGPA",
+      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore. I have completed 6 semesters and have a CGPA of 8.46. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+      degree: "Bachelor of Technology - BTech, CSE in spec. AI & ML.",
     },
     {
       id: 1,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-      school: "Methodist School, Dankuni",
-      date: "Apr 2019 - Apr 2025",
-      grade: "88.2%",
-      desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-      degree: "ISC(XII), Science with Computer",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-f2EbarSuDIJZNtDgnX3QuLOYeMNKFwBqqGjwDgaOg&s",
+      school: "Narayana Group of Colleges, Bangalore",
+      date: "2019 - 2021",
+      grade: "93%",
+      desc: "I completed my class 12 high school education at Narayana Group of Colleges, Ramamurty Nagar, Bangalore, where I studied Science with Computers.",
+      degree: "PUC(12TH), Science with Computers",
     },
     {
       id: 2,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-      school: "Methodist School, Dankuni",
-      date: "Apr 2017 - Apr 2019",
-      grade: "92.3%",
-      desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-      degree: "ICSC(X), Science with Computer",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-f2EbarSuDIJZNtDgnX3QuLOYeMNKFwBqqGjwDgaOg&s",
+      school: "Narayana Group of Schools, Bangalore",
+      date: "2018 - 2019",
+      grade: "86%",
+      desc: "I completed my class 10 education at Narayana E-Techno School, Ramamurtynagar, Bangalore, where I studied Science with Computers.",
+      degree: "CBSE(10TH), Science with Computers",
     },
   ];
   
   export const projects = [
     {
       id: 9,
-      title: "Trackify",
-      date: "Jun 2023 - Jul 2023",
+      title: "Click & Create",
+      date: "May 2024 - Ongoing",
       description:
-        "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-      image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_cncVk0mzkpRajMerGW_puk2TNbPsu1jS3vc9AfCy_qOH6E27",
+        "A Tools web app with a varity of tools to help with your daily tassk.",
+      image: "https://cdn.discordapp.com/attachments/1015291329120587886/1240589992422543380/Screenshot_2024-05-15_165235.png?ex=66471cf7&is=6645cb77&hm=c13b12fb71dabbdadd3f9f9128f9bc68df43f11532a85e518e07cccf84048b5f&",
       tags: [
-        "Docker",
-        "AWS",
-        "DuckDNS",
-        "Eslint",
-        "Husky",
-        "CI/CD",
         "React Js",
-        "MongoDb",
-        "Node Js",
-        "Express Js",
-        "Redux",
+        "Next Js",
+        "HTML 5",
+        "CSS 3",
+        "Javascript",
       ],
       category: "web",
-      github: "https://github.com/rishavchanda/Trackify",
-      webapp: "https://trackify.duckdns.org",
+      github: "https://github.com/mcspidey95/Click-n-Create",
+      webapp: "",
     },
     {
       id: 0,
@@ -335,12 +369,4 @@ export const Bio = {
       github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
       webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
     },
-  ];
-  
-  export const TimeLineData = [
-    { year: 2017, text: "Started my journey" },
-    { year: 2018, text: "Worked as a freelance developer" },
-    { year: 2019, text: "Founded JavaScript Mastery" },
-    { year: 2020, text: "Shared my projects with the world" },
-    { year: 2021, text: "Started my own platform" },
   ];
