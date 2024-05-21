@@ -230,7 +230,7 @@ const Navbar = () => {
     <Nav>
         <NavContainer>
             <NavLogo>
-                <a href={Bio.insta} target='_blank' style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20;", cursor: "pointer", textDecoration: "none", fontSize: "20px"}}>
+                <a href={Bio.insta} target='_blank' rel='noreferrer' style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20;", cursor: "pointer", textDecoration: "none", fontSize: "20px"}}>
                     <FontAwesomeIcon icon={faSpider} /> <Span>mcspidey95</Span>
                 </a>
             </NavLogo>

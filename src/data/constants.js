@@ -267,7 +267,6 @@ export const Bio = {
         "https://cdn.discordapp.com/attachments/1242453463405822002/1242483905689550939/Recording_2024-05-21_195540_1.gif?ex=664e00cf&is=664caf4f&hm=66e3170da3add5b11ad8951282f260d974dfeb3bd3a87a941a94d24b9f0f780c&",
       tags: ["Python", "Pygame"],
       category: "game",
-      category: "ai",
       github: "https://github.com/mcspidey95/bottleship",
     },
     {
