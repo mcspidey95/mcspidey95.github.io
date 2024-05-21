@@ -14,7 +14,7 @@ const Button = styled.button`
     cursor: pointer;
     transition: all 0.8s ease-in-out;
 `
-const Card = styled.div`
+const Card = styled.a`
     width: 330px;
     height: 490px;
     background-color: ${({ theme }) => theme.card};
@@ -25,6 +25,7 @@ const Card = styled.div`
     padding: 26px 20px;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
     gap: 14px;
     transition: all 0.5s ease-in-out;
     &:hover {
@@ -40,6 +41,7 @@ const Card = styled.div`
 const Image = styled.img`
     width: 100%;
     height: 180px;
+    object-fit: cover;
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
     box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
@@ -123,7 +125,7 @@ const Avatar = styled.img`
 
 const ProjectCard = ({project}) => {
   return (
-    <Card>
+    <Card href={project.github} target='_blank'>
       <Image src={ project.image } />
       <Tags>
         {project.tags.map((tag) => (

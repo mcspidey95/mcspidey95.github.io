@@ -91,7 +91,7 @@ export const GithubButton = styled.a`
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
     :hover {
       background: ${({ theme }) => theme.primary};
       color: ${({ theme }) => theme.white};     
