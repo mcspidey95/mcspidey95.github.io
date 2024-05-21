@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link as LinkR } from 'react-router-dom';
+import { Bio } from '../../data/constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpider } from '@fortawesome/free-solid-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -31,7 +32,7 @@ export const NavContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.a`
     width: 80%;    
     padding: 0 6px;
     display: flex;
@@ -229,7 +230,7 @@ const Navbar = () => {
     <Nav>
         <NavContainer>
             <NavLogo>
-                <a href='/' style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20;", cursor: "pointer", textDecoration: "none", fontSize: "20px"}}>
+                <a href={Bio.insta} target='_blank' style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20;", cursor: "pointer", textDecoration: "none", fontSize: "20px"}}>
                     <FontAwesomeIcon icon={faSpider} /> <Span>mcspidey95</Span>
                 </a>
             </NavLogo>
