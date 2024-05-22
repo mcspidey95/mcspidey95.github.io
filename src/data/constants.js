@@ -193,7 +193,7 @@ export const Bio = {
       date: "May 2024 - Ongoing",
       description:
         "A Tools web app with a varity of tools to help with your daily tasks.",
-      image: "https://cdn.discordapp.com/attachments/1242453463405822002/1242453534939807764/click.gif?ex=664de486&is=664c9306&hm=c9dff04067da7715e8ce514bfc776bbfb25463a8c8ebd9988f943f881492dfb3&",
+      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/click.gif",
       tags: [
         "React Js",
         "Next Js",
@@ -210,7 +210,7 @@ export const Bio = {
       date: "Mar 2023 - May 2023",
       description:
         "A fun 2D Survival game made as a project! Hope you like it :)",
-      image: "https://cdn.discordapp.com/attachments/1242453463405822002/1242457650109612062/selmon.gif?ex=664de85b&is=664c96db&hm=796046927c0c42537527c0c95ad2758be744d7f6380ea64fb723c50e28d3a0d8&",
+      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/selmon.gif",
       tags: ["C#", "MonoGame", "Visual Studio"],
       category: "games",
       github: "https://github.com/mcspidey95/Selmon-Rises",
@@ -222,7 +222,7 @@ export const Bio = {
       description:
         "Python code to solve the LunarLander-v2 environment using Deep-Q Learning.",
       image:
-        "https://cdn.discordapp.com/attachments/1242453463405822002/1242459757420216390/328114873-dd4e4268-97cc-4cec-9a87-f4e38e1ecc3f_1.gif?ex=664dea51&is=664c98d1&hm=f3acecca95ad93dc66fefeffb1d94c545b4003bd5ffdd6f767f24a14fa35d213&",
+        "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/lunar.gif",
       tags: [
         "Python",
         "Tensorflow",
@@ -240,7 +240,7 @@ export const Bio = {
       description:
         "A tool to run Valorant with Japanese or English Voice-overs while retaining English Text/UI.",
       image:
-        "https://cdn.discordapp.com/attachments/1242453463405822002/1242462493947727923/UI-Valorant-Main-Menu_1.gif?ex=664decde&is=664c9b5e&hm=fdd9a31298a51f2be5aa4bb91bc4d85426c7c12b9b770d99293fa96ae67cb172&",
+        "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/valo.gif",
       tags: ["Valorant", "Batchscript", "VBScript", "File Modification"],
       category: "games",
       github: "https://github.com/mcspidey95/Valorant-VoiceOvers-Mod",
@@ -252,7 +252,7 @@ export const Bio = {
       description:
         "An Expense Tracker Project developed using .NET (ASP .NET Core).",
       image:
-        "https://cdn.discordapp.com/attachments/1242453463405822002/1242482256535097375/325130192-5ecea7ff-e543-402a-bd0f-fc0a4d8cb0fa_2.png?ex=664dff46&is=664cadc6&hm=cbc5d2bb5d8017a62be78ac064eb2f2cb80df036bb8fc4eeb45c7ab276abe719&",
+        "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/pennywise.png",
       tags: ["C#", ".NET", "MVC Framework", "ASP.NET Core"],
       category: "web",
       github: "https://github.com/mcspidey95/PennyWise",
@@ -264,7 +264,7 @@ export const Bio = {
       description:
         "Sink or be sunk! Engage in strategic naval warfare in this classic Battleship game, reimagined in Python with my own AI as your competitor.",
       image:
-        "https://cdn.discordapp.com/attachments/1242453463405822002/1242483905689550939/Recording_2024-05-21_195540_1.gif?ex=664e00cf&is=664caf4f&hm=66e3170da3add5b11ad8951282f260d974dfeb3bd3a87a941a94d24b9f0f780c&",
+        "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/bottleship.gif",
       tags: ["Python", "Pygame"],
       category: "game",
       github: "https://github.com/mcspidey95/bottleship",
@@ -276,7 +276,7 @@ export const Bio = {
       description:
         "A simple javascript webpage to make your girl smile. Send this site to her :)",
       image:
-        "https://cdn.discordapp.com/attachments/1242453463405822002/1242485629263155210/Recording_2024-05-21_200220.gif?ex=664e026a&is=664cb0ea&hm=50262e7a4542176f6b7bebfdae60ee144cf088cdb5eff9c0b19d765e2215bde1&",
+        "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/heartbroker.gif",
       tags: ["HTML", "CSS", "Javascript"],
       category: "web",
       github: "https://github.com/mcspidey95/Heartbreaker-or-Heartmaker-",
@@ -288,7 +288,7 @@ export const Bio = {
       description:
         "Prediction of any Cryptocurrency or Stock Market Price using Past Data and Long-Short Term Memory Neural Network for any future time period.",
       image:
-        "https://cdn.discordapp.com/attachments/1242453463405822002/1242484490325069917/download.png?ex=664e015a&is=664cafda&hm=65f3f51e360112c097850a65c091e6f04632ea65ceac977c5815866421ed0317&",
+        "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/crypto.png",
       tags: ["Python", "LSTM Networks", "Sklearn", "Random Forest"],
       category: "ai",
       github: "https://drive.google.com/drive/folders/1xzmhuuee5SAJjyEsxSwH7SbRBp7BRdQl?usp=sharing",
