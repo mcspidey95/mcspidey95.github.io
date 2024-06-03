@@ -242,7 +242,7 @@ const Navbar = () => {
                 <NavLink href='#skills'>Skills</NavLink>
                 <NavLink href='#projects'>Projects</NavLink>
                 <NavLink href='#education'>Education</NavLink>
-                <NavLink href='#tools'>Tools</NavLink>
+                <NavLink href='https://click-n-create.vercel.app/'>Tools</NavLink>
             </NavItems>
             <ButtonContainer>
                 <GithubButton href='https://github.com/mcspidey95' target='_blank'>Github Profile</GithubButton>
