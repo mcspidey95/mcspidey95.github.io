@@ -7,6 +7,7 @@ import pfp from "../../images/pfp.jpg";
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
+  margin-bottom: 50px;
   justify-content: center;
   position: relative;
   padding: 80px 30px;
