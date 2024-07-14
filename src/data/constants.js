@@ -7,7 +7,7 @@ export const Bio = {
     ],
 
     description:
-      "A motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results and make a meaningful contribution and achieve great things.",
+      "A motivated and versatile professional, eager to embrace new challenges. With a passion for continuous learning, I am dedicated to delivering high-quality results, making meaningful contributions, and achieving significant goals.",
     github: "https://github.com/mcspidey95",
     resume: "https://drive.google.com/file/d/1tcJsJurqRuUrDqPO6lABAKrcs_6LEZIx/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/mcspidey95/",
@@ -163,7 +163,7 @@ export const Bio = {
       school: "Presidency University, Bangalore",
       date: "2021 - 2025 (Ongoing)",
       grade: "8.32 CGPA",
-      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore. I have completed 6 semesters and have a CGPA of 8.32. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+      desc: "I am pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore, with a CGPA of 8.32 after five semesters. My coursework includes Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks.",
       degree: "Bachelor of Technology - BTech, CSE in spec. AI & ML.",
     },
     {
@@ -172,7 +172,7 @@ export const Bio = {
       school: "Narayana PU College, Bangalore",
       date: "2019 - 2021",
       grade: "93%",
-      desc: "I completed my class 12 high school education at Narayana Group of Colleges, Ramamurthy Nagar, Bangalore, where I studied Science with Computers.",
+      desc: "I completed my Class 12 education in Science with a focus on Computers at Narayana Group of Colleges, Ramamurthy Nagar, Bangalore.",
       degree: "PUC(12TH), Science with Computers",
     },
     {
@@ -181,7 +181,7 @@ export const Bio = {
       school: "Narayana e-Techno School, Bangalore",
       date: "2018 - 2019",
       grade: "86%",
-      desc: "I completed my class 10 education at Narayana e-Techno School, Ramamurthy Nagar, Bangalore, where I studied Science with Computers.",
+      desc: "I completed my Class 10 education in Science with a focus on Computers at Narayana e-Techno School, Ramamurthy Nagar, Bangalore.",
       degree: "CBSE(10TH), Science with Computers",
     },
   ];

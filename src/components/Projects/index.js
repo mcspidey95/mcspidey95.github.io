@@ -113,8 +113,8 @@ const Projects = () => {
         <Wrapper>
         <Title>Projects</Title>
         <Description>
-        I have worked on a variety of projects, from web apps to AI projects.
-        Here are some of them.
+        I have worked on a variety of projects, ranging from web applications to AI projects. 
+        Here are some of them:
         </Description>
 
         <ToggleGroup >

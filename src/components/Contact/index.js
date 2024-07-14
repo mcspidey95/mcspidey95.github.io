@@ -152,11 +152,11 @@ const Contact = () => {
     <Container>
       <Wrapper>
         <Title>Contact Me</Title>
-        <Desc>I'm happy to answer any questions you may have, or discuss potential collaborations.</Desc>
+        <Desc>I am happy to answer any questions you may have or discuss potential collaborations.</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🖋️</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
+          <ContactTitle>Feel free to email me 🖋️.</ContactTitle>
+          <ContactInput placeholder="Email" name="from_email" />
+          <ContactInput placeholder="Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />

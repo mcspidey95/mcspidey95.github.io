@@ -80,7 +80,7 @@ const Education = () => {
             <Wrapper>
                 <Title>Education</Title>
                 <Description>
-                    My Educational details are as follows.
+                    My educational details are as follows.
                 </Description>
                 <TimelineSection>
                     <Timeline>
