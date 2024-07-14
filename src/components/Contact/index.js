@@ -154,7 +154,7 @@ const Contact = () => {
         <Title>Contact Me</Title>
         <Desc>I am happy to answer any questions you may have or discuss potential collaborations.</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Feel free to email me 📬.</ContactTitle>
+          <ContactTitle>Feel free to email me! 📬</ContactTitle>
           <ContactInput placeholder="Email" name="from_email" />
           <ContactInput placeholder="Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
