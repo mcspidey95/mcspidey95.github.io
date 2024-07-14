@@ -9,7 +9,7 @@ export const Bio = {
     description:
       "A motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results and make a meaningful contribution and achieve great things.",
     github: "https://github.com/mcspidey95",
-    resume: "https://drive.google.com/file/d/1oAQmq4RH-wttAFKkw3VazKwc793qybQw/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1tcJsJurqRuUrDqPO6lABAKrcs_6LEZIx/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/mcspidey95/",
     twitter: "https://twitter.com/batKaGrip",
     insta: "https://www.instagram.com/mcspidey95/",
@@ -162,26 +162,26 @@ export const Bio = {
       img: "https://content3.jdmagicbox.com/v2/comp/bangalore/f6/080pxx80.xx80.170412082210.w8f6/catalogue/presidency-university-yelahanka-bangalore-universities-si0nhgmmkz.jpg",
       school: "Presidency University, Bangalore",
       date: "2021 - 2025 (Ongoing)",
-      grade: "8.46 CGPA",
-      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore. I have completed 6 semesters and have a CGPA of 8.46. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+      grade: "8.32 CGPA",
+      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore. I have completed 6 semesters and have a CGPA of 8.32. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
       degree: "Bachelor of Technology - BTech, CSE in spec. AI & ML.",
     },
     {
       id: 1,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-f2EbarSuDIJZNtDgnX3QuLOYeMNKFwBqqGjwDgaOg&s",
-      school: "Narayana Group of Colleges, Bangalore",
+      school: "Narayana PU College, Bangalore",
       date: "2019 - 2021",
       grade: "93%",
-      desc: "I completed my class 12 high school education at Narayana Group of Colleges, Ramamurty Nagar, Bangalore, where I studied Science with Computers.",
+      desc: "I completed my class 12 high school education at Narayana Group of Colleges, Ramamurthy Nagar, Bangalore, where I studied Science with Computers.",
       degree: "PUC(12TH), Science with Computers",
     },
     {
       id: 2,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-f2EbarSuDIJZNtDgnX3QuLOYeMNKFwBqqGjwDgaOg&s",
-      school: "Narayana Group of Schools, Bangalore",
+      school: "Narayana e-Techno School, Bangalore",
       date: "2018 - 2019",
       grade: "86%",
-      desc: "I completed my class 10 education at Narayana E-Techno School, Ramamurtynagar, Bangalore, where I studied Science with Computers.",
+      desc: "I completed my class 10 education at Narayana e-Techno School, Ramamurthy Nagar, Bangalore, where I studied Science with Computers.",
       degree: "CBSE(10TH), Science with Computers",
     },
   ];
@@ -190,7 +190,7 @@ export const Bio = {
     {
       id: 9,
       title: "Click & Create",
-      date: "May 2024 - Ongoing",
+      date: "May 2024",
       description:
         "A Tools web app with a varity of tools to help with your daily tasks.",
       image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/click.gif",
@@ -207,7 +207,7 @@ export const Bio = {
     {
       id: 0,
       title: "Selmon Rises",
-      date: "Mar 2023 - May 2023",
+      date: "May 2023",
       description:
         "A fun 2D Survival game made as a project! Hope you like it :)",
       image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/selmon.gif",
@@ -248,7 +248,7 @@ export const Bio = {
     {
       id: 3,
       title: "PennyWise",
-      date: "Mar 2024 - Apr 2024",
+      date: "Apr 2024",
       description:
         "An Expense Tracker Project developed using .NET (ASP .NET Core).",
       image:
@@ -266,7 +266,7 @@ export const Bio = {
       image:
         "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/bottleship.gif",
       tags: ["Python", "Pygame"],
-      category: "game",
+      category: "games",
       github: "https://github.com/mcspidey95/bottleship",
     },
     {
@@ -284,7 +284,7 @@ export const Bio = {
     {
       id: 5,
       title: "Crypto Prediction",
-      date: "Jun 2021",
+      date: "Jun 2023",
       description:
         "Prediction of any Cryptocurrency or Stock Market Price using Past Data and Long-Short Term Memory Neural Network for any future time period.",
       image:
