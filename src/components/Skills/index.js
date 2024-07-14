@@ -122,8 +122,8 @@ const Skills = () => {
       <Wrapper>
       <Title>Skills</Title>
         <Description>
-        Here are some of my skills that i have been working on for the
-        past 2 years.
+        Here are some of the skills I have been developing 
+        over the past two years.
         </Description>
         <SkillsContainer>
           {
