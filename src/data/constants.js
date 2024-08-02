@@ -9,7 +9,7 @@ export const Bio = {
     description:
       "A motivated and versatile professional, eager to embrace new challenges. With a passion for continuous learning, I am dedicated to delivering high-quality results, making meaningful contributions, and achieving significant goals.",
     github: "https://github.com/mcspidey95",
-    resume: "https://drive.google.com/file/d/1tcJsJurqRuUrDqPO6lABAKrcs_6LEZIx/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1uVmljukKZ7BCmBGK9Bj2a8yLf6uuuiNo/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/mcspidey95/",
     twitter: "https://twitter.com/batKaGrip",
     insta: "https://www.instagram.com/mcspidey95/",
@@ -162,8 +162,8 @@ export const Bio = {
       img: "https://content3.jdmagicbox.com/v2/comp/bangalore/f6/080pxx80.xx80.170412082210.w8f6/catalogue/presidency-university-yelahanka-bangalore-universities-si0nhgmmkz.jpg",
       school: "Presidency University, Bangalore",
       date: "2021 - 2025 (Ongoing)",
-      grade: "8.32 CGPA",
-      desc: "I am pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore, with a CGPA of 8.32 after five semesters. My coursework includes Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks.",
+      grade: "8.43 CGPA",
+      desc: "I am pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore, with a CGPA of 8.32 after six semesters. My coursework includes Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks.",
       degree: "Bachelor of Technology - BTech, CSE in spec. AI & ML.",
     },
     {
