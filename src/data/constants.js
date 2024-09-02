@@ -2,7 +2,7 @@ export const Bio = {
     name: "Manish Bhat",
     roles: [
       "an AI Engineer",
-      "a Full Stack Developer",
+      "a Web Developer",
       "a Programmer",
     ],
 
@@ -163,7 +163,7 @@ export const Bio = {
       school: "Presidency University, Bangalore",
       date: "2021 - 2025 (Ongoing)",
       grade: "8.43 CGPA",
-      desc: "I am pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore, with a CGPA of 8.43 after six semesters. My coursework includes Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks.",
+      desc: "I am pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore, with a CGPA of 8.43 after six semesters. My coursework includes Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks.",
       degree: "Bachelor of Technology - BTech, CSE in spec. AI & ML.",
     },
     {
@@ -181,7 +181,7 @@ export const Bio = {
       school: "Narayana e-Techno School, Bangalore",
       date: "2018 - 2019",
       grade: "86%",
-      desc: "I completed my Class 10 education in Science with a focus on Computers at Narayana e-Techno School, Ramamurthy Nagar, Bangalore.",
+      desc: "I completed my Class 10 education at Narayana e-Techno School, Ramamurthy Nagar, Bangalore.",
       degree: "CBSE(10TH), Science with Computers",
     },
   ];
@@ -197,23 +197,6 @@ export const Bio = {
       tags: ["HTML", "CSS", "JavaScript", "Node.Js", "VBScript"],
       category: "web",
       github: "https://github.com/mcspidey95/TerminalTab",
-    },
-    {
-      id: 9,
-      title: "Click & Create",
-      date: "May 2024",
-      description:
-        "A Tools web app with a varity of tools to help with your daily tasks.",
-      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/click.gif",
-      tags: [
-        "React Js",
-        "Next Js",
-        "HTML 5",
-        "CSS 3",
-        "Javascript",
-      ],
-      category: "web",
-      github: "https://github.com/mcspidey95/Click-n-Create",
     },
     {
       id: 1,
@@ -232,6 +215,23 @@ export const Bio = {
       ],
       category: "ai",
       github: "https://github.com/mcspidey95/LunarLander-using-Deep-Q-Learning",
+    },
+    {
+      id: 9,
+      title: "Click & Create",
+      date: "May 2024",
+      description:
+        "A Tools web app with a varity of tools to help with your daily tasks.",
+      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/click.gif",
+      tags: [
+        "React Js",
+        "Next Js",
+        "HTML 5",
+        "CSS 3",
+        "Javascript",
+      ],
+      category: "web",
+      github: "https://github.com/mcspidey95/Click-n-Create",
     },
     {
       id: 2,

@@ -166,11 +166,11 @@ export const ResumeButton = styled.a`
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
+    transition: all 0.1s ease-in-out !important;
     background: hsla(271, 100%, 50%, 1);
     background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(251, 100%, 50%, 1) 0%, hsla(203, 100%, 50%, 1) 100%);
     box-shadow:  20px 20px 60px #1F2634,
     -20px -20px 60px #1F2634;
     &:hover {
@@ -227,7 +227,7 @@ const hero = () => {
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer>
-            <Title>Hi, I am <br />{Bio.name}</Title>
+            <Title>Hey!👋 I'm <br />{Bio.name}</Title>
             <TextLoop>I am <Span> <Typewriter options={{strings: Bio.roles, autoStart: true, loop: true}}></Typewriter></Span></TextLoop>
             <Subtitle>{Bio.description}</Subtitle>
             <ResumeButton href={Bio.resume} target='_blank'>Check Resume</ResumeButton>
