@@ -7,10 +7,10 @@ export const Bio = {
     ],
 
     description:
-      "A motivated and versatile professional, eager to embrace new challenges. With a passion for continuous learning, I am dedicated to delivering high-quality results, making meaningful contributions, and achieving significant goals.",
+      "Driven to learn and grow while creating solutions that improve user experiences. Eager to collaborate on impactful projects where I can contribute my coding and problem-solving abilities.",
     github: "https://github.com/mcspidey95",
-    resume: "https://drive.google.com/file/d/1uVmljukKZ7BCmBGK9Bj2a8yLf6uuuiNo/view?usp=sharing",
-    linkedin: "https://www.linkedin.com/in/mcspidey95/",
+    resume: "https://drive.google.com/file/d/1YFoB-qDzCoWNcm_i96kh2c2ublL5RyVr/view?usp=sharing",
+    linkedin: "https://www.linkedin.com/in/manishbhat95/",
     twitter: "https://twitter.com/batKaGrip",
     insta: "https://www.instagram.com/mcspidey95/",
   };
@@ -163,7 +163,7 @@ export const Bio = {
       school: "Presidency University, Bangalore",
       date: "2021 - 2025 (Ongoing)",
       grade: "8.43 CGPA",
-      desc: "I am pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore, with a CGPA of 8.32 after six semesters. My coursework includes Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks.",
+      desc: "I am pursuing a Bachelor's degree in Computer Science and Engineering at Presidency University, Bangalore, with a CGPA of 8.43 after six semesters. My coursework includes Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks.",
       degree: "Bachelor of Technology - BTech, CSE in spec. AI & ML.",
     },
     {
@@ -188,6 +188,17 @@ export const Bio = {
   
   export const projects = [
     {
+      id: 0,
+      title: "TerminalTab!",
+      date: "August 2024",
+      description:
+        "A customizable new tab page that maximizes utility with useful features.",
+      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/terminalTab.gif",
+      tags: ["HTML", "CSS", "JavaScript", "Node.Js", "VBScript"],
+      category: "web",
+      github: "https://github.com/mcspidey95/TerminalTab",
+    },
+    {
       id: 9,
       title: "Click & Create",
       date: "May 2024",
@@ -203,17 +214,6 @@ export const Bio = {
       ],
       category: "web",
       github: "https://github.com/mcspidey95/Click-n-Create",
-    },
-    {
-      id: 0,
-      title: "Selmon Rises",
-      date: "May 2023",
-      description:
-        "A fun 2D Survival game made as a project! Hope you like it :)",
-      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/selmon.gif",
-      tags: ["C#", "MonoGame", "Visual Studio"],
-      category: "games",
-      github: "https://github.com/mcspidey95/Selmon-Rises",
     },
     {
       id: 1,
