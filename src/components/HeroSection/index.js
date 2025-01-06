@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import pfp from "../../images/pfp.jpg";
+import pfp from "../../images/pfp2.jpg";
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};

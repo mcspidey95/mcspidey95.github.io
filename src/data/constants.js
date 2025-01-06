@@ -9,7 +9,7 @@ export const Bio = {
     description:
       "Driven to learn and grow while creating solutions that improve user experiences. Eager to collaborate on impactful projects where I can contribute my coding and problem-solving abilities.",
     github: "https://github.com/mcspidey95",
-    resume: "https://drive.google.com/file/d/1YFoB-qDzCoWNcm_i96kh2c2ublL5RyVr/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1uVmljukKZ7BCmBGK9Bj2a8yLf6uuuiNo/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/manishbhat95/",
     twitter: "https://twitter.com/batKaGrip",
     insta: "https://www.instagram.com/mcspidey95/",
@@ -25,9 +25,9 @@ export const Bio = {
             "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
         },
         {
-          name: "Next Js",
+          name: "Svelte",
           image:
-            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
         },
         {
           name: "HTML",
@@ -51,11 +51,6 @@ export const Bio = {
           name: ".Net",
           image:
               "https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg",
-        },
-        {
-          name: "Angluar Js",
-          image:
-            "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
         },
         {
           name: "MySQL",
@@ -93,9 +88,9 @@ export const Bio = {
               "https://avatars.githubusercontent.com/u/21206976?s=200&v=4",
         },
         {
-          name: "Matplotlib",
+          name: "Stable Diffusion",
           image:
-              "https://upload.wikimedia.org/wikipedia/commons/0/01/Created_with_Matplotlib-logo.svg",
+              "https://striking-kindness-e0d93214bb.media.strapiapp.com/Stable_Diffusion_logo_2b68efd6c7.png",
         }
       ],
     },
@@ -190,7 +185,7 @@ export const Bio = {
     {
       id: 0,
       title: "TerminalTab!",
-      date: "August 2024",
+      date: "October 2024",
       description:
         "A customizable new tab page that maximizes utility with useful features.",
       image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/terminalTab.gif",
@@ -200,6 +195,28 @@ export const Bio = {
     },
     {
       id: 1,
+      title: "Dungeons, AI & Dragons",
+      date: "January 2025",
+      description:
+        "A customizable new tab page that maximizes utility with useful features.",
+      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/dad.gif",
+      tags: ["Stable Diffusion", "LLM", "Svelte", "JavaScript"],
+      category: "ai",
+      github: "https://github.com/mcspidey95/TerminalTab",
+    },
+    {
+      id: 2,
+      title: "ExamDesk",
+      date: "December 2024",
+      description:
+        "A customizable new tab page that maximizes utility with useful features.",
+      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/terminalTab.gif",
+      tags: ["HTML", "CSS", "JavaScript", "Node.Js", "VBScript"],
+      category: "web",
+      github: "https://github.com/mcspidey95/TerminalTab",
+    },
+    {
+      id: 3,
       title: "Lunar Lander",
       date: "May 2024",
       description:
@@ -217,7 +234,7 @@ export const Bio = {
       github: "https://github.com/mcspidey95/LunarLander-using-Deep-Q-Learning",
     },
     {
-      id: 9,
+      id: 4,
       title: "Click & Create",
       date: "May 2024",
       description:
@@ -234,7 +251,7 @@ export const Bio = {
       github: "https://github.com/mcspidey95/Click-n-Create",
     },
     {
-      id: 2,
+      id: 5,
       title: "Valorant Voiceover Mod",
       date: "Feb 2023",
       description:
@@ -246,7 +263,7 @@ export const Bio = {
       github: "https://github.com/mcspidey95/Valorant-VoiceOvers-Mod",
     },
     {
-      id: 3,
+      id: 6,
       title: "PennyWise",
       date: "Apr 2024",
       description:
@@ -258,7 +275,7 @@ export const Bio = {
       github: "https://github.com/mcspidey95/PennyWise",
     },
     {
-      id: 10,
+      id: 7,
       title: "BottleShip",
       date: "Jan 2024",
       description:
@@ -270,7 +287,7 @@ export const Bio = {
       github: "https://github.com/mcspidey95/bottleship",
     },
     {
-      id: 4,
+      id: 8,
       title: "Heartbreaker💘",
       date: "Feb 2024",
       description:
@@ -282,8 +299,20 @@ export const Bio = {
       github: "https://github.com/mcspidey95/Heartbreaker-or-Heartmaker-",
     },
     {
-      id: 5,
+      id: 9,
       title: "Crypto Prediction",
+      date: "Jun 2023",
+      description:
+        "Prediction of any Cryptocurrency or Stock Market Price using Past Data and Long-Short Term Memory Neural Network for any future time period.",
+      image:
+        "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/crypto.png",
+      tags: ["Python", "LSTM Networks", "Sklearn", "Random Forest"],
+      category: "ai",
+      github: "https://drive.google.com/drive/folders/1xzmhuuee5SAJjyEsxSwH7SbRBp7BRdQl?usp=sharing",
+    },
+    {
+      id: 10,
+      title: "World Cup 2023 Prediction",
       date: "Jun 2023",
       description:
         "Prediction of any Cryptocurrency or Stock Market Price using Past Data and Long-Short Term Memory Neural Network for any future time period.",
