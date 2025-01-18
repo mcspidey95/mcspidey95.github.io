@@ -83,9 +83,9 @@ export const Bio = {
               "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
         },
         {
-          name: "Pandas",
+          name: "Langchain",
           image:
-              "https://avatars.githubusercontent.com/u/21206976?s=200&v=4",
+              "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/refs/heads/master/src/components/Projects/previews/langchain.png",
         },
         {
           name: "Stable Diffusion",
@@ -198,22 +198,22 @@ export const Bio = {
       title: "Dungeons, AI & Dragons",
       date: "January 2025",
       description:
-        "A customizable new tab page that maximizes utility with useful features.",
+        "An AI-powered companion for creating immersive and dynamic tabletop RPG experiences!",
       image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/dad.gif",
       tags: ["Stable Diffusion", "LLM", "Svelte", "JavaScript"],
       category: "ai",
-      github: "https://github.com/mcspidey95/TerminalTab",
+      github: "https://github.com/mcspidey95/Dungeons-AI-Dragons",
     },
     {
       id: 2,
       title: "ExamDesk",
       date: "December 2024",
       description:
-        "A customizable new tab page that maximizes utility with useful features.",
-      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/terminalTab.gif",
-      tags: ["HTML", "CSS", "JavaScript", "Node.Js", "VBScript"],
+        "Generate timetables, seating arrangements, and invigilator assignments in seconds!",
+      image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/examdesk.gif",
+      tags: ["Java", "Svelte", "Electron", "Node.Js"],
       category: "web",
-      github: "https://github.com/mcspidey95/TerminalTab",
+      github: "https://github.com/mcspidey95/ExamDesk",
     },
     {
       id: 3,
@@ -315,9 +315,9 @@ export const Bio = {
       title: "World Cup 2023 Prediction",
       date: "Jun 2023",
       description:
-        "Prediction of any Cryptocurrency or Stock Market Price using Past Data and Long-Short Term Memory Neural Network for any future time period.",
+        "A Python script using Random Forest to predict scores and match outcomes for the Cricket World Cup 2023!",
       image:
-        "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/crypto.png",
+        "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/cricket.png",
       tags: ["Python", "LSTM Networks", "Sklearn", "Random Forest"],
       category: "ai",
       github: "https://drive.google.com/drive/folders/1xzmhuuee5SAJjyEsxSwH7SbRBp7BRdQl?usp=sharing",
