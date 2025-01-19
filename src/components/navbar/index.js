@@ -3,7 +3,6 @@ import { Link as LinkR } from 'react-router-dom';
 import { Bio } from '../../data/constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpider } from '@fortawesome/free-solid-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components';
 import { useTheme } from 'styled-components';
 import { UseHover } from '../../hoverContext';
@@ -256,7 +255,6 @@ const Navbar = () => {
                 </a>
             </NavLogo>
             <MobileIcon>
-              <FontAwesomeIcon icon={faBars} onClick={() => setOpen(!open)} />
             </MobileIcon>
             <NavItems>
                 <NavLink href='#about'>About</NavLink>
