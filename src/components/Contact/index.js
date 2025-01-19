@@ -67,6 +67,12 @@ const ContactForm = styled.form`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   margin-top: 28px;
   gap: 12px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  }
 `
 
 const ContactTitle = styled.div`
@@ -120,8 +126,9 @@ const ContactButton = styled.input`
   font-size: 18px;
   font-weight: 600;
   &:hover {
-    transform: scale(1.005);
-transition: all 0.1s ease-in-out;
+    transform: translateY(-1px) scale(1.01);
+transition: all 0.2s ease;
+cursor: pointer;
 box-shadow:  20px 20px 60px #1F2634,
 filter: brightness(3);
 } 

@@ -6,9 +6,10 @@ import { faSpider } from '@fortawesome/free-solid-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components';
 import { useTheme } from 'styled-components';
+import { UseHover } from '../../hoverContext';
 
 export const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
+    background-color: ${({isHovered, theme}) => isHovered ? theme.black : theme.card_light};
     height: 80px;
     display: flex;
     align-items: center;
@@ -17,6 +18,12 @@ export const Nav = styled.div`
     position: sticky;
     top: 0;
     z-index: 10;
+    transition: background-color 0.3s ease;
+
+    &.hovered {
+        background-color: ${({ theme }) => theme.black};
+    }
+
     @media (max-width: 960px) {
         trastion: 0.8s all ease;
     }
@@ -39,6 +46,7 @@ export const NavLogo = styled.a`
     justify-content: start;
     align-items: center;
     text-decoration: none;
+  }
     @media (max-width: 640px) {
       padding: 0 0px;
   }
@@ -67,10 +75,12 @@ export const NavLink = styled.a`
     color: ${({ theme }) => theme.text_primary};
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease;
     text-decoration: none;
+
     :hover {
       color: ${({ theme }) => theme.primary};
+      transform: translateY(-1px) scale(1.03);
     }
 
     &.active {
@@ -80,22 +90,23 @@ export const NavLink = styled.a`
 
 
 export const GithubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
+  border: 1.8px solid ${({ isHovered, theme }) => isHovered ? theme.red : theme.primary};
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ isHovered, theme }) => isHovered ? theme.red : theme.primary}};
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease;
     :hover {
       background: ${({ theme }) => theme.primary};
-      color: ${({ theme }) => theme.white};     
+      color: ${({ theme }) => theme.white};
+      transform: translateY(-1px) scale(1.02);     
     }
     @media screen and (max-width: 768px) { 
     font-size: 14px;
@@ -225,13 +236,23 @@ export const MobileNavLogo = styled(LinkR)`
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
+  const { isHovered, setIsHovered } = UseHover();
   const theme = useTheme();
+
+  React.useEffect(() => {
+    const logo = document.querySelector("svg");
+    if (logo) {
+      logo.style.color = isHovered ? theme.red : theme.white;
+    }
+  }, [isHovered]);
+
+
   return (
-    <Nav>
+    <Nav isHovered = {isHovered}>
         <NavContainer>
             <NavLogo>
-                <a href={Bio.insta} target='_blank' rel='noreferrer' style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20;", cursor: "pointer", textDecoration: "none", fontSize: "20px"}}>
-                    <FontAwesomeIcon icon={faSpider} /> <Span>mcspidey95</Span>
+                <a href={Bio.linkedin} target='_blank' rel='noreferrer' style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20;", cursor: "pointer", textDecoration: "none", fontSize: "20px", transition: "transform 0.1s ease"}} onMouseEnter={(e) => { e.currentTarget.querySelector("svg").style.color = theme.primary; e.currentTarget.style.transform = "translateY(-2px) scale(1.03)"; }} onMouseLeave={(e) => {e.currentTarget.querySelector("svg").style.color = theme.white; e.currentTarget.style.transform = "translateY(0) scale(1)"; }}>
+                    <FontAwesomeIcon icon={faSpider} style={{transition: "color 0.3s ease"}} /> <Span style={{transition: "color 0.3s ease"}}>mcspidey95</Span>
                 </a>
             </NavLogo>
             <MobileIcon>
@@ -242,10 +263,10 @@ const Navbar = () => {
                 <NavLink href='#skills'>Skills</NavLink>
                 <NavLink href='#projects'>Projects</NavLink>
                 <NavLink href='#education'>Education</NavLink>
-                <NavLink href='https://click-n-create.vercel.app/' id='dad'><img src='https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/dad.png' /></NavLink>
+                <NavLink href='https://dad-thegame.vercel.app/' target='_blank' id='dad' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}><img src='https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/dad.png' alt='dad'/></NavLink>
             </NavItems>
             <ButtonContainer>
-                <GithubButton href='https://github.com/mcspidey95' target='_blank'>Github Profile</GithubButton>
+                <GithubButton href='https://github.com/mcspidey95' target='_blank' isHovered={isHovered}>Github Profile</GithubButton>
             </ButtonContainer>
         </NavContainer>
         {

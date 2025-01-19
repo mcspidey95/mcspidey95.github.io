@@ -5,6 +5,12 @@ export const Bio = {
       "a Web Developer",
       "a Programmer",
     ],
+    dad: [
+      "Spider-Man",
+      "Ken Kaneki",
+      "Lord Sakai",
+      "Rocky Bhai",
+    ],
 
     description:
       "Driven to learn and grow while creating solutions that improve user experiences. Eager to collaborate on impactful projects where I can contribute my coding and problem-solving abilities.",
@@ -190,7 +196,7 @@ export const Bio = {
         "A customizable new tab page that maximizes utility with useful features.",
       image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/terminalTab.gif",
       tags: ["HTML", "CSS", "JavaScript", "Node.Js", "VBScript"],
-      category: "web",
+      category: ["web"],
       github: "https://github.com/mcspidey95/TerminalTab",
     },
     {
@@ -201,7 +207,7 @@ export const Bio = {
         "An AI-powered companion for creating immersive and dynamic tabletop RPG experiences!",
       image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/dad.gif",
       tags: ["Stable Diffusion", "LLM", "Svelte", "JavaScript"],
-      category: "ai",
+      category: ["ai", "games"],
       github: "https://github.com/mcspidey95/Dungeons-AI-Dragons",
     },
     {
@@ -211,8 +217,8 @@ export const Bio = {
       description:
         "Generate timetables, seating arrangements, and invigilator assignments in seconds!",
       image: "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/examdesk.gif",
-      tags: ["Java", "Svelte", "Electron", "Node.Js"],
-      category: "web",
+      tags: ["Java", "Svelte", "Electron", "Node.Js","Javascript"],
+      category: ["web"],
       github: "https://github.com/mcspidey95/ExamDesk",
     },
     {
@@ -230,7 +236,7 @@ export const Bio = {
         "Deep Q-Learning",
         "Neural Networks",
       ],
-      category: "ai",
+      category: ["ai"],
       github: "https://github.com/mcspidey95/LunarLander-using-Deep-Q-Learning",
     },
     {
@@ -247,7 +253,7 @@ export const Bio = {
         "CSS 3",
         "Javascript",
       ],
-      category: "web",
+      category: ["web"],
       github: "https://github.com/mcspidey95/Click-n-Create",
     },
     {
@@ -259,7 +265,7 @@ export const Bio = {
       image:
         "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/valo.gif",
       tags: ["Valorant", "Batchscript", "VBScript", "File Modification"],
-      category: "games",
+      category: ["games"],
       github: "https://github.com/mcspidey95/Valorant-VoiceOvers-Mod",
     },
     {
@@ -271,7 +277,7 @@ export const Bio = {
       image:
         "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/pennywise.png",
       tags: ["C#", ".NET", "MVC Framework", "ASP.NET Core"],
-      category: "web",
+      category: ["web"],
       github: "https://github.com/mcspidey95/PennyWise",
     },
     {
@@ -283,7 +289,7 @@ export const Bio = {
       image:
         "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/bottleship.gif",
       tags: ["Python", "Pygame"],
-      category: "games",
+      category: ["games"],
       github: "https://github.com/mcspidey95/bottleship",
     },
     {
@@ -295,7 +301,7 @@ export const Bio = {
       image:
         "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/heartbroker.gif",
       tags: ["HTML", "CSS", "Javascript"],
-      category: "web",
+      category: ["web"],
       github: "https://github.com/mcspidey95/Heartbreaker-or-Heartmaker-",
     },
     {
@@ -307,7 +313,7 @@ export const Bio = {
       image:
         "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/crypto.png",
       tags: ["Python", "LSTM Networks", "Sklearn", "Random Forest"],
-      category: "ai",
+      category: ["ai"],
       github: "https://drive.google.com/drive/folders/1xzmhuuee5SAJjyEsxSwH7SbRBp7BRdQl?usp=sharing",
     },
     {
@@ -319,7 +325,7 @@ export const Bio = {
       image:
         "https://raw.githubusercontent.com/mcspidey95/mcspidey95.github.io/master/src/components/Projects/previews/cricket.png",
       tags: ["Python", "LSTM Networks", "Sklearn", "Random Forest"],
-      category: "ai",
+      category: ["ai"],
       github: "https://drive.google.com/drive/folders/1xzmhuuee5SAJjyEsxSwH7SbRBp7BRdQl?usp=sharing",
     }
   ];

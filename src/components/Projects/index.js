@@ -60,6 +60,11 @@ export const ToggleGroup = styled.div`
     border-radius: 12px;
     font-weight: 500;
     margin: 22px 0px;
+      transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px) scale(1.02);
+  }
     @media (max-width: 768px) {
         font-size: 12px;
     }
@@ -69,9 +74,16 @@ export const ToggleButton = styled.div`
     padding: 8px 18px;
     border-radius: 6px;
     cursor: pointer;
+      transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px) scale(1.01);
+    color: white;
+  }
     ${({ active, theme }) =>
         active && `
     background: ${theme.primary + 20};
+    color: white;
     `
     }
     &:hover {
@@ -94,6 +106,7 @@ export const CardContainer = styled.div`
     align-items: center;
     gap: 28px;
     flex-wrap: wrap;
+    
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
     // grid-gap: 32px;
@@ -144,7 +157,7 @@ const Projects = () => {
 
         <CardContainer>
           {toggle === 'all' && projects.map((project) => <ProjectCards project={project} />)}
-          {projects.filter((item) => item.category === toggle).map((project) => <ProjectCards project={project} />)}
+          {projects.filter((item) => item.category.includes(toggle)).map((project) => <ProjectCards project={project} />)}
         </CardContainer>
         </Wrapper>
     </Container>

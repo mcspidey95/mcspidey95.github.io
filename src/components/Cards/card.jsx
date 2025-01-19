@@ -14,9 +14,9 @@ const Card = styled.a`
     flex-direction: column;
     text-decoration: none;
     gap: 14px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-9px);
         box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
         filter: brightness(1.1);
     }
