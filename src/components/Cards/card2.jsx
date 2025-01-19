@@ -15,6 +15,7 @@ const Document = styled.img`
 
 const Description = styled.div`
     width: 100%;
+    height: 100%;
     font-size: 15px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary + 99};
@@ -44,7 +45,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:hover{
         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
         transform: translateY(-5px);

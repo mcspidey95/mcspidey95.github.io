@@ -1,16 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Bio } from "../../data/constants";
+import { UseHover } from '../../hoverContext';
 import Typewriter from "typewriter-effect";
-import pfp from "../../images/pfp2.jpg";
+import pfp from "../../images/pfp1.jpg";
+import pfp2 from "../../images/pfp2.jpg";
 
 export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.card_light};
+  background: ${({ isHovered, theme }) => isHovered ? theme.black : theme.card_light};
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
   position: relative;
   padding: 80px 30px;
+  transition: background-color 0.3s ease;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
@@ -79,6 +82,8 @@ export const HeroLeftContainer = styled.div`
 `;
 
 export const HeroRightContainer = styled.div`
+  position: relative; // Ensure proper stacking for images
+  height: 100%;
   width: 100%;
   display: flex;
   order: 2;
@@ -131,8 +136,9 @@ export const TextLoop = styled.div`
 
 export const Span = styled.span`
   margin-left: 5px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ isHovered, theme }) => isHovered ? theme.red : theme.primary};
   cursor: pointer;
+  transition: color 0.3s ease;
 `;
 
 export const Subtitle = styled.div`
@@ -166,16 +172,15 @@ export const ResumeButton = styled.a`
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    transition: all 0.1s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(251, 100%, 50%, 1) 0%, hsla(203, 100%, 50%, 1) 100%);
+      background: ${({ isHovered, theme }) =>
+      isHovered
+      ? `linear-gradient(225deg, hsla(354, 78%, 30%, 1) 0%, hsla(354, 89%, 54%, 1) 100%);`
+      : `linear-gradient(225deg, hsla(251, 100%, 50%, 1) 0%, hsla(203, 100%, 50%, 1) 100%);`};
     box-shadow:  20px 20px 60px #1F2634,
     -20px -20px 60px #1F2634;
+    transition: all 0.15s ease !important;
     &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
+        transform: translateY(-5px) scale(1.03);
     box-shadow:  20px 20px 60px #1F2634,
     filter: brightness(1);
     }    
@@ -195,12 +200,17 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 2px solid ${({ isHovered2, theme }) => isHovered2 ? theme.red : theme.primary};
 
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+
+  transition: all 0.5s ease;
+  opacity: ${({ isHovered }) => (isHovered ? 1 : 0)};
+  position: absolute;
+  transform: ${({ isHovered }) => (isHovered ? 'scale(1)' : 'scale(0.95)')};
 
   @keyframes floating {
     0% { transform: translate(0, 0px); }
@@ -220,20 +230,22 @@ export const Img = styled.img`
 `;
 
 const hero = () => {
+  const { isHovered } = UseHover();
   return (
     <div id='about'>
-      <HeroContainer>
+      <HeroContainer isHovered={isHovered}>
         <HeroBg>
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer>
             <Title>Hey!👋 I'm <br />{Bio.name}</Title>
-            <TextLoop>I am <Span> <Typewriter options={{strings: Bio.roles, autoStart: true, loop: true}}></Typewriter></Span></TextLoop>
+            <TextLoop>I am <Span isHovered={isHovered}> <Typewriter options={{strings: isHovered ? Bio.dad : Bio.roles, autoStart: true, loop: true}}></Typewriter></Span></TextLoop>
             <Subtitle>{Bio.description}</Subtitle>
-            <ResumeButton href={Bio.resume} target='_blank'>Check Resume</ResumeButton>
+            <ResumeButton href={Bio.resume} target='_blank' isHovered={isHovered}>Check Resume</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
-            <Img src={pfp} alt='pfp pic' />
+            <Img src={pfp} alt="pfp pic" isHovered={!isHovered} isHovered2={isHovered}/>
+            <Img src={pfp2} alt="pfp2 pic" isHovered={isHovered} isHovered2={isHovered}/>
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>

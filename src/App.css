@@ -39,3 +39,15 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #626970;
   }
+
+  #dad img{
+    width: 65px;
+    height: 65px;
+    transform: rotate(5deg) translateX(-10px) translateY(5px);
+    transition: all 0.2s ease;
+  }
+
+  #dad:hover img{
+    transform: rotate(10deg) translateX(-10px) translateY(5px) scale(1.2);
+    cursor: cell;
+  }

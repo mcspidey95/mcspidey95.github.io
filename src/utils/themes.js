@@ -8,5 +8,6 @@ export const darkTheme = {
     card_light: '#0d1624',
     button:"#854CE6",
     white:"#FFFFFF",
-    black:"#000000",
+    black:"#101117",
+    red: '#f21f35',
 }
