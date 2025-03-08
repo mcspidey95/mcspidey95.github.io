@@ -15,7 +15,7 @@ export const Bio = {
     description:
       "Driven to learn and grow while creating solutions that improve user experiences. Eager to collaborate on impactful projects where I can contribute my coding and problem-solving abilities.",
     github: "https://github.com/mcspidey95",
-    resume: "https://drive.google.com/file/d/1uVmljukKZ7BCmBGK9Bj2a8yLf6uuuiNo/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1y1wlK6Plv6YIFBI3p-b8BhUyNtaudMsQ/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/manishbhat95/",
     twitter: "https://twitter.com/batKaGrip",
     insta: "https://www.instagram.com/mcspidey95/",
