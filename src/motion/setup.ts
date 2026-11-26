@@ -121,17 +121,53 @@ export function setupMotion() {
       off.push(() => btn.removeEventListener('click', click));
     });
 
-    // Role ticker (subtle live pulse at rest)
+    // Role typewriter (types + backspaces on one clean line)
     const roleEl = document.querySelector<HTMLElement>('[data-role-cycle]');
     if (roleEl && !prefersReducedMotion()) {
       let idx = 0;
-      const timer = setInterval(() => {
+      let charIdx = roleEl.textContent?.length ?? 0;
+      let deleting = true;
+      let lastMode = document.documentElement.getAttribute('data-alter') === 'spidey';
+      let pauseUntil = performance.now() + 1400;
+      let timer: number;
+
+      const step = () => {
         const isSpidey = document.documentElement.getAttribute('data-alter') === 'spidey';
         const list = isSpidey ? site.alterAliases : site.roles;
-        idx = (idx + 1) % list.length;
-        roleEl.textContent = list[idx];
-      }, 2800);
-      off.push(() => clearInterval(timer));
+        if (isSpidey !== lastMode) {
+          lastMode = isSpidey;
+          idx = 0;
+          deleting = false;
+          charIdx = 0;
+          pauseUntil = 0;
+        }
+        const word = list[idx % list.length];
+        const now = performance.now();
+        if (now < pauseUntil) {
+          timer = window.setTimeout(step, 80);
+          return;
+        }
+        if (deleting) {
+          charIdx = Math.max(0, charIdx - 1);
+          roleEl.textContent = word.slice(0, charIdx);
+          if (charIdx === 0) {
+            deleting = false;
+            idx = (idx + 1) % list.length;
+            pauseUntil = now + 220;
+          }
+          timer = window.setTimeout(step, 32);
+        } else {
+          charIdx = Math.min(word.length, charIdx + 1);
+          roleEl.textContent = word.slice(0, charIdx);
+          if (charIdx === word.length) {
+            deleting = true;
+            pauseUntil = now + 1700;
+          }
+          timer = window.setTimeout(step, 58);
+        }
+      };
+      timer = window.setTimeout(step, 1400);
+      off.push(() => clearTimeout(timer));
     }
 
     // Index list floating preview

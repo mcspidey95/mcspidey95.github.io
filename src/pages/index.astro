@@ -14,7 +14,7 @@ import { site, projects, experience, education, capabilityGroups } from '../data
         <h1 class="hero-title" data-split="lines" data-intro>{site.name}</h1>
         <div class="hero-role" data-reveal="up" data-intro data-delay="0.15">
           <span>I am</span>
-          <span class="accent mono" data-role-cycle>{site.roles[0]}</span>
+          <span class="accent mono"><span data-role-cycle>{site.roles[0]}</span><span class="role-cursor" aria-hidden="true"></span></span>
         </div>
         <p class="hero-desc" data-reveal="up" data-intro data-delay="0.22">
           {site.description}

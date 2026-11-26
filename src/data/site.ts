@@ -27,8 +27,8 @@ export const site = {
   resume: '/resume.pdf',
   description:
     'AI Engineer at EpicMinds building production agentic systems, local-first AI infrastructure, and interactive web software.',
-  roles: ['AI Engineer', 'Agentic Systems Builder', 'Full-Stack Developer'],
-  alterAliases: ['Friendly Neighborhood Spidey', 'Lord Sakai', 'Ken Kaneki', 'Rocky Bhai'],
+  roles: ['an AI Engineer.', 'a Systems Builder.', 'a Web Developer.', 'a Problem Solver.'],
+  alterAliases: ['Spider-Man.', 'Lord Sakai.', 'Ken Kaneki.', 'Rocky Bhai.'],
   socials: [
     { label: 'GitHub', href: 'https://github.com/mcspidey95' },
     { label: 'Email', href: 'mailto:manishbhat666@gmail.com' },
