@@ -51,7 +51,7 @@ export const projects: Project[] = [
     outcome:
       'Runs continuously within ~500 MB idle footprint, automates meeting capture, Obsidian knowledge-graph maintenance, and multi-device task routing with zero cloud lock-in.',
     tags: ['Python', 'Kotlin', 'Jetpack Compose', 'Arch Linux', 'Tailscale', 'Zero-Trust'],
-    preview: '/assets/pfp2.jpg',
+    preview: '/assets/valaris-preview.svg',
     privateLabel: 'Private Architecture (Valaris-AI)',
     featured: true,
   },
