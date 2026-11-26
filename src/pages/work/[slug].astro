@@ -1,0 +1,81 @@
+---
+import Base from '../../layouts/Base.astro';
+import { projects } from '../../data/site';
+
+export function getStaticPaths() {
+  return projects.map((project, i) => ({
+    params: { slug: project.slug },
+    props: { project, next: projects[(i + 1) % projects.length] },
+  }));
+}
+
+const { project, next } = Astro.props;
+---
+<Base title={project.title} description={project.tagline}>
+  <article class="case-hero">
+    <div class="wrap">
+      <a class="case-back" href="/#work">&larr; Back to Selected Work</a>
+      <h1 class="case-title" data-split="lines" data-intro>{project.title}</h1>
+      <p class="hero-desc" data-reveal="up" data-intro data-delay="0.12">{project.summary}</p>
+      <div class="hero-cta" data-reveal="up" data-intro data-delay="0.2">
+        {project.github ? (
+          <a class="btn" href={project.github} target="_blank" rel="noreferrer" data-fill>
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span>View on GitHub</span>
+          </a>
+        ) : (
+          <span class="pill-btn">{project.privateLabel ?? 'Private Repository'}</span>
+        )}
+      </div>
+
+      <div class="case-meta-grid" data-reveal="fade" data-intro data-delay="0.25">
+        <div>
+          <div class="section-kicker">Role</div>
+          <p>{project.role}</p>
+        </div>
+        <div>
+          <div class="section-kicker">Year</div>
+          <p class="mono">{project.year}</p>
+        </div>
+        <div>
+          <div class="section-kicker">Stack</div>
+          <div class="tag-row" style="margin-top:0.35rem;">
+            {project.tags.map((t) => <span class="tag">{t}</span>)}
+          </div>
+        </div>
+      </div>
+
+      <div class="case-media" data-reveal="clip" data-intro data-delay="0.28">
+        <img src={project.preview} alt={`${project.title} showcase`} data-critical />
+      </div>
+    </div>
+  </article>
+
+  <section class="wrap case-body">
+    <div class="case-block" data-reveal="up">
+      <h2>Problem</h2>
+      <p class="muted">{project.problem}</p>
+    </div>
+    <div class="case-block" data-reveal="up" data-delay="0.08">
+      <h2>Architecture &amp; Build</h2>
+      <p class="muted">{project.solution}</p>
+    </div>
+    <div class="case-block" data-reveal="up" data-delay="0.16">
+      <h2>Outcome</h2>
+      <p class="muted">{project.outcome}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <div class="section-kicker">Next Project</div>
+        <h2 class="section-title">{next.title}</h2>
+      </div>
+      <a class="btn" href={`/work/${next.slug}/`} data-fill>
+        <span class="btn__fill" aria-hidden="true"></span>
+        <span>Open Case Study &rarr;</span>
+      </a>
+    </div>
+  </section>
+</Base>

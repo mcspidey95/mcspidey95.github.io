@@ -1,0 +1,24 @@
+---
+import { site } from '../data/site';
+---
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="section-kicker" style="margin-bottom: 0.75rem;">Contact</div>
+    <h2 class="footer-cta" data-split="lines">Let's build something sharp.</h2>
+    <div class="hero-cta">
+      <a class="btn" href={`mailto:${site.email}`} data-fill data-magnetic="0.2">
+        <span class="btn__fill" aria-hidden="true"></span>
+        <span>{site.email}</span>
+      </a>
+      <button type="button" class="btn btn--ghost" data-copy-email>Copy Email</button>
+      <a class="btn btn--ghost" href={site.github} target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+    <div class="footer-row">
+      <span>{site.name} ({site.handle}) · {site.location}</span>
+      <div class="footer-links">
+        <a class="draw" href={site.resume} target="_blank" rel="noreferrer">Resume PDF</a>
+        <a class="draw" href={site.github} target="_blank" rel="noreferrer">github.com/mcspidey95</a>
+      </div>
+    </div>
+  </div>
+</footer>

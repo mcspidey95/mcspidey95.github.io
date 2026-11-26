@@ -1,0 +1,74 @@
+---
+import { site, projects } from '../data/site';
+---
+<div class="palette-backdrop" id="palette-backdrop" hidden>
+  <div class="palette" role="dialog" aria-modal="true" aria-label="Command palette">
+    <input class="palette-input" id="palette-input" type="text" placeholder="Type a command or project... (Esc to close)" autocomplete="off" />
+    <ul class="palette-list" id="palette-list">
+      <li><button type="button" class="palette-item" data-cmd="alter"><span>Toggle Alter-Ego / Spider-Sense Mode</span><span class="kbd">S</span></button></li>
+      <li><button type="button" class="palette-item" data-cmd="resume"><span>Open Resume PDF</span><span class="kbd">PDF</span></button></li>
+      <li><button type="button" class="palette-item" data-cmd="email"><span>Copy Email ({site.email})</span><span class="kbd">Copy</span></button></li>
+      {projects.map((p) => (
+        <li><a class="palette-item" href={`/work/${p.slug}/`}><span>Project: {p.title}</span><span class="kbd">{p.year}</span></a></li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<script>
+  import { onPage, scrollToTarget } from '../engine';
+  import { toggleAlterEgo } from '../motion/setup';
+  import { site } from '../data/site';
+
+  onPage(() => {
+    const backdrop = document.getElementById('palette-backdrop') as HTMLElement | null;
+    const input = document.getElementById('palette-input') as HTMLInputElement | null;
+    const list = document.getElementById('palette-list') as HTMLElement | null;
+    if (!backdrop || !input || !list) return;
+
+    const open = () => {
+      backdrop.hidden = false;
+      input.value = '';
+      filter('');
+      input.focus();
+    };
+    const close = () => { backdrop.hidden = true; };
+    const toggle = () => (backdrop.hidden ? open() : close());
+
+    const filter = (q: string) => {
+      const term = q.trim().toLowerCase();
+      list.querySelectorAll('li').forEach((li) => {
+        li.style.display = li.textContent?.toLowerCase().includes(term) ? '' : 'none';
+      });
+    };
+
+    const onInput = () => filter(input.value);
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape' && !backdrop.hidden) close(); };
+    const onBackClick = (e: MouseEvent) => { if (e.target === backdrop) close(); };
+
+    document.querySelectorAll('[data-palette-open]').forEach((b) => b.addEventListener('click', open));
+    window.addEventListener('valaris:palette-toggle', toggle);
+    input.addEventListener('input', onInput);
+    addEventListener('keydown', onKey);
+    backdrop.addEventListener('click', onBackClick);
+
+    list.querySelectorAll<HTMLElement>('[data-cmd]').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const cmd = btn.dataset.cmd;
+        close();
+        if (cmd === 'alter') toggleAlterEgo();
+        else if (cmd === 'resume') window.open(site.resume, '_blank');
+        else if (cmd === 'email') await navigator.clipboard?.writeText(site.email).catch(() => {});
+      });
+    });
+
+    list.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+
+    return () => {
+      window.removeEventListener('valaris:palette-toggle', toggle);
+      input.removeEventListener('input', onInput);
+      removeEventListener('keydown', onKey);
+      backdrop.removeEventListener('click', onBackClick);
+    };
+  });
+</script>

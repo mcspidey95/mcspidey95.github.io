@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/space-grotesk-400_700-normal.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/jetbrains-mono-400_600-normal.woff2') format('woff2');
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --c-bg: #090b0e;
+  --c-surface: #10141b;
+  --c-fg: #f4f5f7;
+  --c-muted: #94a3b8;
+  --c-line: rgba(244, 245, 247, 0.12);
+  --c-accent: #22d3ee;
+  --c-accent-ink: #041014;
+  --c-curtain: #10141b;
+
+  --f-display: 'Space Grotesk', system-ui, sans-serif;
+  --f-body: 'Space Grotesk', system-ui, sans-serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --t-mega: clamp(3.25rem, 1.5rem + 9vw, 8.75rem);
+  --t-xl: clamp(2.1rem, 1.3rem + 3.2vw, 4.25rem);
+  --t-l: clamp(1.5rem, 1.15rem + 1.4vw, 2.35rem);
+  --t-m: clamp(1.125rem, 1.02rem + 0.45vw, 1.4rem);
+  --t-body: clamp(1rem, 0.96rem + 0.18vw, 1.1rem);
+  --t-s: 0.875rem;
+  --t-xs: 0.75rem;
+
+  --u: clamp(0.5rem, 0.35rem + 0.55vw, 0.95rem);
+  --gutter: clamp(1.1rem, 0.75rem + 1.8vw, 3rem);
+  --max-w: 1280px;
+  --radius: 4px;
+
+  --z-content: 1;
+  --z-preview: 30;
+  --z-header: 50;
+  --z-palette: 70;
+  --z-cursor: 80;
+  --z-curtain: 90;
+  --z-loader: 100;
+}
+
+html[data-alter='spidey'] {
+  --c-bg: #0d0709;
+  --c-surface: #180c10;
+  --c-fg: #f8f2f3;
+  --c-muted: #fda4af;
+  --c-line: rgba(248, 242, 243, 0.15);
+  --c-accent: #f43f5e;
+  --c-accent-ink: #1a0408;
+  --c-curtain: #180c10;
+}

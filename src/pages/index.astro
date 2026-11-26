@@ -1,0 +1,142 @@
+---
+import Base from '../layouts/Base.astro';
+import { site, projects, experience, education, capabilityGroups } from '../data/site';
+---
+<Base>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-meta" data-reveal="fade" data-intro>
+          <span class="status-badge"><span class="brand-dot" aria-hidden="true"></span>AI Engineer @ EpicMinds</span>
+          <span>{site.location}</span>
+          <span>{site.coords}</span>
+        </div>
+        <h1 class="hero-title" data-split="lines" data-intro>{site.name}</h1>
+        <div class="hero-role" data-reveal="up" data-intro data-delay="0.15">
+          <span>I am</span>
+          <span class="accent mono" data-role-cycle>{site.roles[0]}</span>
+        </div>
+        <p class="hero-desc" data-reveal="up" data-intro data-delay="0.22">
+          {site.description}
+        </p>
+        <div class="hero-cta" data-reveal="up" data-intro data-delay="0.3">
+          <a class="btn" href={site.resume} target="_blank" rel="noreferrer" data-fill data-magnetic="0.2">
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span>Check Resume</span>
+          </a>
+          <a class="btn btn--ghost" href="#work">Selected Work</a>
+        </div>
+      </div>
+
+      <div class="portrait-wrap" data-reveal="scale" data-intro data-delay="0.18">
+        <button type="button" class="portrait-frame" data-portrait data-cursor="Alter-Ego" aria-label="Toggle Spider-Sense alter-ego portrait" style="width:100%; display:block;">
+          <img class="img-base" src="/assets/pfp1.jpg" alt="Manish Bhat portrait" data-critical />
+          <img class="img-alter" src="/assets/pfp2.jpg" alt="Manish Bhat Spider-Man alter-ego portrait" />
+        </button>
+        <div class="portrait-caption">
+          <span data-alter-caption>MODE // POLARIS</span>
+          <span>Hover or tap to flip</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Selected Work</div>
+          <h2 class="section-title" data-split="lines">Systems shipped &amp; active.</h2>
+        </div>
+        <span class="mono muted" style="font-size: var(--t-xs);">01 - 04 // Click for case study</span>
+      </div>
+
+      <ul class="work-list" data-index>
+        {projects.map((p, idx) => (
+          <li class="work-item" data-reveal="up">
+            <a class="work-link" href={`/work/${p.slug}/`} data-preview={p.preview} data-cursor="Open">
+              <span class="work-num">{String(idx + 1).padStart(2, '0')}</span>
+              <span class="work-title">{p.title}</span>
+              <span class="work-tagline">{p.tagline}</span>
+              <span class="work-meta">
+                <span>{p.year}</span>
+                <span class="work-arrow" aria-hidden="true">&#8599;</span>
+              </span>
+              <div class="work-thumb-mobile">
+                <img src={p.preview} alt={`${p.title} preview`} loading="lazy" />
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="preview-box" aria-hidden="true"><img src={projects[0].preview} alt="" /></div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="wrap split-cols">
+      <div>
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Experience</div>
+            <h2 class="section-title" data-split="lines">Work</h2>
+          </div>
+        </div>
+        {experience.map((job) => (
+          <article class="timeline-card" data-reveal="up">
+            <div class="timeline-top">
+              <h3 class="timeline-role">{job.role}</h3>
+              <span class="timeline-period">{job.period}</span>
+            </div>
+            <div class="timeline-org">{job.company} · {job.location}</div>
+            <ul class="timeline-list">
+              {job.points.map((pt) => <li>{pt}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+
+      <div>
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Education &amp; Honors</div>
+            <h2 class="section-title" data-split="lines">Foundation</h2>
+          </div>
+        </div>
+        {education.map((edu) => (
+          <article class="timeline-card" data-reveal="up">
+            <div class="timeline-top">
+              <h3 class="timeline-role">{edu.school}</h3>
+              <span class="timeline-period">{edu.period}</span>
+            </div>
+            <div class="timeline-org">{edu.degree} · <strong class="accent">{edu.grade}</strong></div>
+            <ul class="timeline-list">
+              {edu.highlights.map((h) => <li>{h}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="capabilities">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Capabilities</div>
+          <h2 class="section-title" data-split="lines">Tools &amp; Stack</h2>
+        </div>
+      </div>
+      <div class="cap-grid">
+        {capabilityGroups.map((grp) => (
+          <div class="cap-card" data-reveal="up">
+            <h3 class="cap-title">{grp.title}</h3>
+            <ul class="cap-items">
+              {grp.items.map((item) => <li>{item}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
