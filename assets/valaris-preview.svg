@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#090b0e" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(244,245,247,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#090b0e"/>
+  <rect width="1200" height="750" fill="url(#grid)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+
+  <!-- Top status bar -->
+  <rect x="64" y="56" width="1072" height="44" rx="4" fill="#10141b" stroke="rgba(244,245,247,0.14)"/>
+  <circle cx="92" cy="78" r="5" fill="#22d3ee"/>
+  <text x="110" y="83" fill="#f4f5f7" font-family="monospace" font-size="15" font-weight="600">VALARIS // MULTI-NODE AUTONOMOUS CO-PILOT</text>
+  <text x="1110" y="83" text-anchor="end" fill="#22d3ee" font-family="monospace" font-size="14">ZERO-TRUST ARMED</text>
+
+  <!-- Center Polaris Star Emblem -->
+  <circle cx="600" cy="340" r="115" fill="#10141b" stroke="#22d3ee" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="600" cy="340" r="150" fill="none" stroke="rgba(34,211,238,0.18)" stroke-dasharray="6 6"/>
+  <path d="M600 245 L620 320 L695 340 L620 360 L600 435 L580 360 L505 340 L580 320 Z" fill="#22d3ee"/>
+  <circle cx="600" cy="340" r="12" fill="#090b0e"/>
+
+  <!-- Connecting lines -->
+  <line x1="300" y1="340" x2="485" y2="340" stroke="#22d3ee" stroke-width="1.5" stroke-opacity="0.45" stroke-dasharray="5 5"/>
+  <line x1="715" y1="340" x2="900" y2="340" stroke="#22d3ee" stroke-width="1.5" stroke-opacity="0.45" stroke-dasharray="5 5"/>
+  <line x1="600" y1="455" x2="600" y2="545" stroke="#22d3ee" stroke-width="1.5" stroke-opacity="0.45" stroke-dasharray="5 5"/>
+
+  <!-- Left Node: valaris-hq -->
+  <rect x="84" y="278" width="216" height="124" rx="4" fill="#10141b" stroke="rgba(244,245,247,0.16)"/>
+  <text x="108" y="314" fill="#22d3ee" font-family="monospace" font-size="13">NODE 01 // HOME BASE</text>
+  <text x="108" y="344" fill="#f4f5f7" font-family="sans-serif" font-size="22" font-weight="700">valaris-hq</text>
+  <text x="108" y="372" fill="#94a3b8" font-family="monospace" font-size="13">2GB Arch · Hermes · Bridges</text>
+
+  <!-- Right Node: pixel-10 -->
+  <rect x="900" y="278" width="216" height="124" rx="4" fill="#10141b" stroke="rgba(244,245,247,0.16)"/>
+  <text x="924" y="314" fill="#22d3ee" font-family="monospace" font-size="13">NODE 02 // MOBILE</text>
+  <text x="924" y="344" fill="#f4f5f7" font-family="sans-serif" font-size="22" font-weight="700">Pixel 10</text>
+  <text x="924" y="372" fill="#94a3b8" font-family="monospace" font-size="13">Kotlin · WS :8899 · Biometric</text>
+
+  <!-- Bottom Node: dell + Vault -->
+  <rect x="420" y="545" width="360" height="110" rx="4" fill="#10141b" stroke="rgba(244,245,247,0.16)"/>
+  <text x="446" y="580" fill="#22d3ee" font-family="monospace" font-size="13">NODE 03 // OFFLOAD &amp; SECOND BRAIN</text>
+  <text x="446" y="610" fill="#f4f5f7" font-family="sans-serif" font-size="21" font-weight="700">Workstation + Obsidian Vault</text>
+  <text x="446" y="635" fill="#94a3b8" font-family="monospace" font-size="13">Tailscale Mesh · Syncthing · Vault Sentinel</text>
+</svg>
