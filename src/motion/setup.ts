@@ -20,7 +20,7 @@ function slapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement,
   if (prefersReducedMotion()) {
     host.classList.add('is-slapped');
     note.hidden = false;
-    gsap.set(note, { opacity: 1, scale: 1, rotate: tilt });
+    gsap.set(note, { xPercent: -50, yPercent: -50, opacity: 1, scale: 1, rotate: tilt });
     return;
   }
 
@@ -28,7 +28,7 @@ function slapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement,
   hand.hidden = false;
 
   gsap.timeline()
-    .set(note, { opacity: 0, scale: 1.18, rotate: tilt * 2 })
+    .set(note, { xPercent: -50, yPercent: -50, opacity: 0, scale: 1.18, rotate: tilt * 2 })
     .fromTo(hand,
       { opacity: 0, x: 56, y: -56, scale: 1.55, rotate: 22 },
       { opacity: 1, x: 0, y: 0, scale: 1, rotate: -6, duration: 0.2, ease: 'power3.in' }
