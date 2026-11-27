@@ -115,7 +115,7 @@ main, header, footer { position: relative; z-index: var(--z-content); }
   border: 1px solid var(--c-line); border-radius: var(--radius); background: var(--c-surface);
   cursor: pointer; transition: border-color 0.35s ease, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
-@media (hover: hover) { .portrait-frame:hover { border-color: var(--c-accent); transform: translateY(-4px); } }
+@media (hover: hover) { .portrait-frame:hover { border-color: var(--c-accent); box-shadow: 0 0 28px color-mix(in srgb, var(--c-accent) 22%, transparent); } }
 .portrait-frame img {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
   transition: opacity 0.45s ease, transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
