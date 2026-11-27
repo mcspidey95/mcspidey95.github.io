@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import PixelAvatar from '../components/PixelAvatar.astro';
 import { site, projects, experience, education, capabilityGroups } from '../data/site';
 ---
 <Base>
@@ -30,8 +31,7 @@ import { site, projects, experience, education, capabilityGroups } from '../data
 
       <div class="portrait-wrap" data-reveal="scale" data-intro data-delay="0.18">
         <button type="button" class="portrait-frame" data-portrait data-cursor="Alter-Ego" aria-label="Toggle Spider-Sense alter-ego portrait" style="width:100%; display:block;">
-          <img class="img-base" src="/assets/pfp1.jpg" alt="Manish Bhat portrait" data-critical />
-          <img class="img-alter" src="/assets/pfp2.jpg" alt="Manish Bhat Spider-Man alter-ego portrait" />
+          <PixelAvatar />
         </button>
         <div class="portrait-caption">
           <span data-alter-caption>MODE // POLARIS</span>

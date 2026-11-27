@@ -241,3 +241,24 @@ html[data-alter='spidey'] .portrait-frame .img-alter { opacity: 1; transform: sc
   .work-thumb-mobile img { width: 100%; height: 100%; object-fit: cover; }
   .preview-box { display: none; }
 }
+
+/* Pixel Avatar Stage */
+.pixel-avatar-stage { position: absolute; inset: 0; width: 100%; height: 100%; }
+.pixel-svg {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  image-rendering: pixelated; image-rendering: crisp-edges;
+  transition: opacity 0.4s ease, transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.portrait-frame .pixel-svg.img-alter { opacity: 0; transform: scale(1.04); }
+html[data-alter='spidey'] .portrait-frame .pixel-svg.img-base { opacity: 0; transform: scale(0.96); }
+html[data-alter='spidey'] .portrait-frame .pixel-svg.img-alter { opacity: 1; transform: scale(1); }
+
+.pixel-bob { animation: px-bob 3.2s steps(2, end) infinite; transform-origin: center bottom; }
+.pixel-eyes { animation: px-blink 4.2s steps(1, end) infinite; transform-box: fill-box; transform-origin: center; }
+.polaris-star { animation: px-pulse 2.2s ease-in-out infinite; }
+.spidey-sense { animation: px-tingle 0.9s steps(2, end) infinite; }
+
+@keyframes px-bob { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-0.6px); } }
+@keyframes px-blink { 0%, 92%, 100% { transform: scaleY(1); } 94%, 97% { transform: scaleY(0.1); } }
+@keyframes px-pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+@keyframes px-tingle { 0%, 100% { opacity: 0.35; transform: translateY(0px); } 50% { opacity: 1; transform: translateY(-0.5px); } }
