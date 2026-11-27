@@ -20,6 +20,7 @@ function slapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement,
   note.hidden = false;
   note.style.display = 'flex';
   gsap.set(host, { autoAlpha: 1 });
+  gsap.set(host, { autoAlpha: 1 });
 
   if (prefersReducedMotion()) {
     host.classList.add('is-slapped');

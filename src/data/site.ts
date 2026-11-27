@@ -196,13 +196,13 @@ export const experience = [
     location: 'Bengaluru',
     role: 'AI Engineer',
     period: 'Aug 2025 - Present',
-    dumdum: 'Bossed around a full dev team, now teaching 2 interns how to not break prod. Built a file-finder for people who forget file names (90% less clutter), fixed laggy talking robots, and stopped AI bills from burning the company wallet.',
+    dumdum: 'Bossed around a full dev team, now teaching 2 interns. Built a file-finder for forgetful people (NeuroVault), an AI teacher that grades messy handwriting (PeakAI), a website-reading chatbot (AIVA), and an AI task boss (JustWork).',
     points: [
       'Led a full engineering team previously and currently mentor 2 AI engineering interns — owning architecture across a 28-repository enterprise AI fleet.',
       'Solved enterprise document amnesia with NeuroVault: teams rarely remember exact filenames or folder paths, only what a file is about, key entities, or visual tables inside it. Built a human-associative memory engine on Elasticsearch 8.x using those cues instead of bloated verbatim chunks — cutting vector storage by 90% while nailing natural recall.',
-      'Eliminated awkward, laggy voice-bot pauses in AIVA by decoupling Kokoro ONNX neural TTS into a standalone microservice with regex-protected sentence-level streaming and a 3D WebGL reactive orb.',
-      'Automated manual handwritten answer-sheet grading via multimodal vision-LLM rubric evaluation, and solved strict government privacy constraints with an air-gapped statutory RAG engine running on-premise EmbeddingGemma models.',
-      'Stopped runaway LLM API bills and multi-tenant data leaks by standardizing FastAPI/Pydantic v2 foundations with dual-token JWT security and mandatory per-call token & USD cost metering, plus Patchright + Gemini visual browser agents.',
+      'Built PeakAI, a school ecosystem that helps students prepare for exams, evaluates handwritten answer sheets, and generates detailed diagnostic report cards pinpointing what students are failing on and exactly how to improve.',
+      'Engineered AIVA, a RAG-based knowledge agent that scrapes organization websites and ingests internal documents so users can get instant, grounded answers from company data.',
+      'Built JustWork, an AI-enabled project management system that streamlines sprint tracking, task orchestration, and engineering delivery.',
     ],
   },
   {
