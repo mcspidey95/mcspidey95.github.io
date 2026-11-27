@@ -37,6 +37,11 @@ main, header, footer { position: relative; z-index: var(--z-content); }
   box-shadow: 0 0 12px var(--c-accent);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+.brand-spider {
+  width: 18px; height: 18px; color: var(--c-accent); flex-shrink: 0;
+  filter: drop-shadow(0 0 8px var(--c-accent));
+  transition: color 0.3s ease, filter 0.3s ease;
+}
 .nav { display: flex; align-items: center; gap: clamp(0.8rem, 2vw, 1.75rem); font-size: var(--t-s); }
 .draw {
   background: linear-gradient(var(--c-accent) 0 0) left bottom / 0% 1px no-repeat;

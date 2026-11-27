@@ -56,25 +56,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: 'dungeons-ai-dragons',
-    title: 'Dungeons, AI & Dragons',
-    year: '2025',
-    role: 'AI & Full-Stack Developer',
-    tagline: 'AI tabletop RPG dungeon master with dynamic scene generation',
-    summary:
-      'Reimagines classic tabletop RPG sessions with an AI dungeon master that tracks character state, narrates branching encounters, and generates scene art on the fly.',
-    problem:
-      'Traditional LLM text adventures lose world state over long sessions and burn tokens repeating static lore.',
-    solution:
-      'Built a Svelte web client backed by structured LLM prompting, state-aware turn memory, Stable Diffusion XL scene art, and adaptive audio cues.',
-    outcome:
-      'Delivers responsive multiplayer-style storytelling with tight token budgets and persistent campaign pacing.',
-    tags: ['Svelte', 'LLM', 'LangChain', 'SDXL', 'JavaScript'],
-    preview: '/assets/dad.gif',
-    github: 'https://github.com/mcspidey95/Dungeons-AI-Dragons',
-    featured: true,
-  },
-  {
     slug: 'terminaltab',
     title: 'TerminalTab',
     year: '2026',
@@ -91,6 +72,25 @@ export const projects: Project[] = [
     tags: ['JavaScript', 'Node.js', 'HTML', 'CSS'],
     preview: '/assets/terminalTab.gif',
     github: 'https://github.com/mcspidey95/TerminalTab',
+    featured: true,
+  },
+  {
+    slug: 'dungeons-ai-dragons',
+    title: 'Dungeons, AI & Dragons',
+    year: '2025',
+    role: 'AI & Full-Stack Developer',
+    tagline: 'AI tabletop RPG dungeon master with dynamic scene generation',
+    summary:
+      'Reimagines classic tabletop RPG sessions with an AI dungeon master that tracks character state, narrates branching encounters, and generates scene art on the fly.',
+    problem:
+      'Traditional LLM text adventures lose world state over long sessions and burn tokens repeating static lore.',
+    solution:
+      'Built a Svelte web client backed by structured LLM prompting, state-aware turn memory, Stable Diffusion XL scene art, and adaptive audio cues.',
+    outcome:
+      'Delivers responsive multiplayer-style storytelling with tight token budgets and persistent campaign pacing.',
+    tags: ['Svelte', 'LLM', 'LangChain', 'SDXL', 'JavaScript'],
+    preview: '/assets/dad.gif',
+    github: 'https://github.com/mcspidey95/Dungeons-AI-Dragons',
     featured: true,
   },
   {
