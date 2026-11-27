@@ -262,3 +262,20 @@ html[data-alter='spidey'] .portrait-frame .pixel-svg.img-alter { opacity: 1; tra
 @keyframes px-blink { 0%, 92%, 100% { transform: scaleY(1); } 94%, 97% { transform: scaleY(0.1); } }
 @keyframes px-pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
 @keyframes px-tingle { 0%, 100% { opacity: 0.35; transform: translateY(0px); } 50% { opacity: 1; transform: translateY(-0.5px); } }
+
+.pixel-img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  image-rendering: pixelated; image-rendering: crisp-edges;
+  transition: opacity 0.4s ease, transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.portrait-frame .pixel-img.img-alter,
+.portrait-frame .pixel-hud.img-alter { opacity: 0; transform: scale(1.04); }
+html[data-alter=spidey] .portrait-frame .pixel-img.img-base,
+html[data-alter=spidey] .portrait-frame .pixel-hud.img-base { opacity: 0; transform: scale(0.96); }
+html[data-alter=spidey] .portrait-frame .pixel-img.img-alter,
+html[data-alter=spidey] .portrait-frame .pixel-hud.img-alter { opacity: 1; transform: scale(1); }
+.pixel-hud { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.pixel-scanlines {
+  position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(to bottom, transparent 0px, transparent 3px, rgba(0,0,0,0.14) 3px, rgba(0,0,0,0.14) 4px);
+}
