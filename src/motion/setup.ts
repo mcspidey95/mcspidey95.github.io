@@ -19,6 +19,7 @@ function slapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement,
 
   note.hidden = false;
   note.style.display = 'flex';
+  gsap.set(host, { autoAlpha: 1 });
 
   if (prefersReducedMotion()) {
     host.classList.add('is-slapped');
@@ -29,7 +30,7 @@ function slapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement,
   hand.hidden = false;
   hand.style.display = 'block';
 
-  gsap.killTweensOf([note, hand, host]);
+  gsap.killTweensOf([note, hand]);
   gsap.timeline()
     .set(note, { xPercent: -50, yPercent: -50, opacity: 0, scale: 1.18, rotate: tilt * 2 })
     .fromTo(hand,
@@ -38,7 +39,7 @@ function slapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement,
     )
     .add(() => { host.classList.add('is-slapped'); })
     .to(note, { opacity: 1, scale: 1, rotate: tilt, duration: 0.22, ease: 'back.out(1.7)' }, '<')
-    .fromTo(host, { rotate: tilt * 0.8 }, { rotate: 0, duration: 0.35, ease: 'elastic.out(1, 0.4)' }, '<')
+    
     .to(hand, {
       opacity: 0, x: 36, y: -36, scale: 1.15, duration: 0.22, ease: 'power2.out',
       onComplete: () => { hand.hidden = true; hand.style.display = 'none'; }
