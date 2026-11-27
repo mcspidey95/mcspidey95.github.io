@@ -1,43 +1,45 @@
-# Astro Starter Kit: Minimal
+# Manish Bhat (`mcspidey95`) — Portfolio
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Live at **[mcspidey95.github.io](https://mcspidey95.github.io)** · Resume at **[mcspidey95.github.io/resume.pdf](https://mcspidey95.github.io/resume.pdf)**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Personal portfolio and interactive case-study dossier built with **Astro**, **GSAP**, and **Lenis**.
 
-## 🚀 Project Structure
+## Highlights
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Dual-Signal Identity (`S`):** Hover/tap the pixel-art portrait or press `S` to flip between **Polaris Obsidian** (`#090B0E` / cyan) and **Spider-Sense Crimson** (`#0D0709` / crimson).
+- **Dumdum Mode (`D`):** Press `D` (or click the derp-face pill) to slap caveman-English yellow Post-it notes over technical jargon as you scroll; click any note to peel it off.
+- **Story-Driven Case Studies:** Dedicated `/work/[slug]` pages with cursor-following desktop previews, iris curtain transitions, and full *Spark -> Problem -> Build -> Outcome* narratives for **Valaris**, **TerminalTab**, **Dungeons, AI & Dragons**, and **ExamDesk**.
+- **Command Palette (`Ctrl+K` / `Cmd+K`):** Instant keyboard navigation across projects, modes, resume PDF, and contact actions.
+
+## Stack
+
+- **Framework:** Astro 5 (static output + `@astrojs/sitemap`)
+- **Motion & Scroll:** GSAP (`ScrollTrigger`, `SplitText`) + Lenis smooth scroll
+- **Typography:** Self-hosted `Space Grotesk` & `JetBrains Mono` (`woff2`)
+- **Deployment:** `master` (source) -> `gh-pages` (static `dist/` via `gh-pages`)
+
+## Structure
 
 ```text
-/
 ├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── assets/          # Project GIFs, pixel-art avatars, spider favicon
+│   ├── fonts/           # Self-hosted woff2 fonts
+│   └── resume.pdf       # 1-page public resume (no phone number)
+└── src/
+    ├── components/      # Header, Footer, Loader, PixelAvatar, CommandPalette
+    ├── data/site.ts     # Projects, EpicMinds experience, education, stack, Dumdum copy
+    ├── engine/          # Scroll, reveals, loader, transitions, Astro router hooks
+    ├── layouts/Base.astro
+    ├── motion/setup.ts  # Alter-ego, Dumdum sticky-note slap, floating previews
+    ├── pages/           # index.astro, work/[slug].astro, 404.astro
+    └── styles/          # tokens.css, engine.css, site.css
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Development & Deploy
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+npm install
+npm run dev      # Local dev server
+npm run build    # Build static site to ./dist/
+npx gh-pages -d dist -t
+```
