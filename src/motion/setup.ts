@@ -60,10 +60,9 @@ function unslapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElemen
 let dumdumObserver: IntersectionObserver | null = null;
 
 function syncDumdumOnPage(active: boolean) {
-  const banner = document.getElementById('dumdum-banner');
-  if (banner) {
-    banner.hidden = !active;
-    banner.style.display = active ? 'flex' : 'none';
+  if (!active) {
+    const pop = document.getElementById('dumdum-popover');
+    if (pop) { pop.hidden = true; pop.style.display = 'none'; }
   }
   document.querySelectorAll<HTMLElement>('[data-dumdum-toggle]').forEach((btn) => {
     btn.setAttribute('aria-pressed', String(active));
@@ -141,6 +140,19 @@ function syncDumdumOnPage(active: boolean) {
   }
 }
 
+let dumdumPopTimer: ReturnType<typeof setTimeout> | undefined;
+
+function flashDumdumPopover() {
+  const pop = document.getElementById('dumdum-popover');
+  if (!pop) return;
+  clearTimeout(dumdumPopTimer);
+  pop.hidden = false;
+  pop.style.display = 'flex';
+  const hide = () => { pop.hidden = true; pop.style.display = 'none'; };
+  pop.onclick = hide;
+  dumdumPopTimer = setTimeout(hide, 3800);
+}
+
 export function toggleDumdumMode(force?: boolean) {
   const html = document.documentElement;
   const current = html.getAttribute('data-dumdum') === 'on';
@@ -149,6 +161,7 @@ export function toggleDumdumMode(force?: boolean) {
   else html.removeAttribute('data-dumdum');
   sessionStorage.setItem('valaris-dumdum', next ? 'on' : '');
   syncDumdumOnPage(next);
+  if (next && !current) flashDumdumPopover();
 }
 
 export function toggleAlterEgo(force?: 'base' | 'spidey') {
