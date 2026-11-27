@@ -16,7 +16,7 @@ const { project, next } = Astro.props;
     <div class="wrap">
       <a class="case-back" href="/#work">&larr; Back to Selected Work</a>
       <h1 class="case-title" data-split="lines" data-intro>{project.title}</h1>
-      <p class="hero-desc" data-reveal="up" data-intro data-delay="0.12">{project.summary}</p>
+      <p class="hero-desc" data-reveal="up" data-intro data-delay="0.12" data-dumdum={project.dumdum.summary}>{project.summary}</p>
       <div class="hero-cta" data-reveal="up" data-intro data-delay="0.2">
         {project.liveUrl && (
           <a class="btn" href={project.liveUrl} target="_blank" rel="noreferrer" data-fill>
@@ -59,28 +59,28 @@ const { project, next } = Astro.props;
 
   <section class="wrap case-story" data-reveal="up">
     <div class="section-kicker" style="margin-bottom: 0.75rem;">The Spark // Why It Exists</div>
-    <p class="case-story-text">{project.story}</p>
+    <p class="case-story-text" data-dumdum={project.dumdum.story}>{project.story}</p>
   </section>
 
   <section class="wrap case-body">
     <div class="case-block" data-reveal="up">
       <h2>The Problem</h2>
-      <p class="muted">{project.problem}</p>
+      <p class="muted" data-dumdum={project.dumdum.problem}>{project.problem}</p>
     </div>
     <div class="case-block" data-reveal="up" data-delay="0.08">
       <h2>How I Built It</h2>
-      <p class="muted">{project.solution}</p>
+      <p class="muted" data-dumdum={project.dumdum.solution}>{project.solution}</p>
     </div>
     <div class="case-block" data-reveal="up" data-delay="0.16">
       <h2>Outcome &amp; Impact</h2>
-      <p class="muted">{project.outcome}</p>
+      <p class="muted" data-dumdum={project.dumdum.outcome}>{project.outcome}</p>
     </div>
   </section>
 
   {project.highlights?.length > 0 && (
     <section class="wrap case-highlights" data-reveal="up">
       <div class="section-kicker" style="margin-bottom: 1rem;">Key Highlights</div>
-      <ul class="timeline-list">
+      <ul class="timeline-list" data-dumdum={project.dumdum.highlights}>
         {project.highlights.map((h) => <li>{h}</li>)}
       </ul>
     </section>

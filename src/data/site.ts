@@ -10,6 +10,14 @@ export interface Project {
   solution: string;
   outcome: string;
   highlights: string[];
+  dumdum: {
+    summary: string;
+    story: string;
+    problem: string;
+    solution: string;
+    outcome: string;
+    highlights: string;
+  };
   tags: string[];
   preview: string;
   github?: string;
@@ -30,6 +38,8 @@ export const site = {
   resume: '/resume.pdf',
   description:
     'AI Engineer at EpicMinds building production agentic systems, local-first AI infrastructure, and interactive web software.',
+  dumdumDesc:
+    'I talk to computers until they do my chores. Mostly Python, filter coffee, and praying the server does not catch fire.',
   roles: ['an AI Engineer.', 'a Systems Builder.', 'a Web Developer.', 'a Problem Solver.'],
   alterAliases: ['Spider-Man.', 'Lord Sakai.', 'Ken Kaneki.', 'Rocky Bhai.'],
   socials: [
@@ -61,6 +71,14 @@ export const projects: Project[] = [
       '4-tier continuous memory: ground-truth Markdown, FTS5 session search, Honcho + EmbeddingGemma, Obsidian Vault',
       'Event-driven Tailscale mesh linking home server, Dell workstation offload node, and Android uplink',
     ],
+    dumdum: {
+      summary: 'I stuffed an AI butler inside a $50 potato laptop and made my phone its strict hall monitor.',
+      story: 'Got tired of chatbots having amnesia every time I closed Chrome. Named my own AI "Valaris", shoved it onto a 2 GB Lenovo, and wired it to my speakers and Pixel.',
+      problem: 'Normal AIs have goldfish brains. Self-hosted AIs eat 16 GB of RAM for breakfast and might accidentally delete your hard drive.',
+      solution: 'Used Tailscale magic wires, 4 layers of sticky-note memory, and a phone fingerprint lock so the AI literally cannot push a scary button unless I thumb-boop my Pixel.',
+      outcome: 'Runs 24/7 on half a gig of RAM. Basically Jarvis, except it runs on crumbs and sarcasm.',
+      highlights: 'Runs on a toaster · Needs my thumbprint for scary stuff · Remembers everything forever · Bosses around my Dell and phone',
+    },
     tags: ['Python', 'Kotlin', 'Jetpack Compose', 'Arch Linux', 'Tailscale', 'Zero-Trust'],
     preview: '/assets/valaris.gif',
     privateLabel: 'Private Architecture (Valaris-AI)',
@@ -87,6 +105,14 @@ export const projects: Project[] = [
       '15-second idle bouncing DVD screensaver that transitions into a playable Spacebar minigame',
       'Built-in YouTube MP4/MP3 downloader, quick search routing, and favorite command links',
     ],
+    dumdum: {
+      summary: 'Google\'s New Tab page was boring, so I replaced it with anime themes, a YouTube yoinker, and a bouncing DVD logo.',
+      story: 'Opened Chrome 50 times a day just to stare at a blank white box. Decided my browser deserved to look like a hacker cockpit from a 2000s movie.',
+      problem: 'Default new tabs are snoozefests, and browser extensions want your credit card just to change the background color.',
+      solution: 'Slapped together JavaScript, anime/cyberpunk themes, a 1-click video downloader, and a secret Spacebar game when you zone out for 15 seconds.',
+      outcome: 'Zero ads, zero tracking, 100% vibes. Still my daily driver.',
+      highlights: 'Anime & Cyberpunk themes · 15-sec idle DVD bounce · Secret Spacebar minigame · Yoinks MP3/MP4s',
+    },
     tags: ['JavaScript', 'Node.js', 'HTML', 'CSS'],
     preview: '/assets/terminalTab.gif',
     github: 'https://github.com/mcspidey95/TerminalTab',
@@ -114,6 +140,14 @@ export const projects: Project[] = [
       'Simulated d20 dice-roll mechanics adjudicating risky player choices',
       'On-the-fly Stable Diffusion XL scene generation per encounter',
     ],
+    dumdum: {
+      summary: 'An AI Dungeon Master that lets you play as Goku or your weird friend, rolls a 20-sided dice, and paints pictures of your bad decisions.',
+      story: 'Real D&D needs 5 friends with matching schedules (impossible). Regular AI text games forget you\'re holding a sword after 3 messages. Fixed both.',
+      problem: 'Normal AI stories ramble forever, forget your stats, and have zero drama.',
+      solution: 'Hooked up Svelte + LangChain to keep the AI on a leash, added real d20 dice rolls so luck can ruin your day, and wired SDXL to draw what\'s happening.',
+      outcome: 'Playable right now on Vercel. Infinite chaos, zero scheduling.',
+      highlights: 'Live on Vercel · AI remembers your stuff · d20 dice decides if you survive · Draws cursed/epic art on the fly',
+    },
     tags: ['Svelte', 'LLM', 'LangChain', 'SDXL', 'JavaScript'],
     preview: '/assets/dad.gif',
     github: 'https://github.com/mcspidey95/Dungeons-AI-Dragons',
@@ -141,6 +175,14 @@ export const projects: Project[] = [
       'Cross-department seating interleaving to maximize fairness and hall utilization',
       'Automated faculty invigilator roster balancing by shift limits and availability',
     ],
+    dumdum: {
+      summary: 'A robot that stops 200,000 college kids from sitting in the wrong exam room or copying off their buddy.',
+      story: 'Watched college staff lose their minds over Excel sheets for 3 days straight just to make exam seating charts — and still mess it up. Built a button to do it in 2 seconds.',
+      problem: 'Putting thousands of kids in rooms without double-booking them or seating besties next to each other is a math nightmare.',
+      solution: 'Stuffed a grumpy Java math brain inside a sleek Svelte + Electron desktop app that shuffles seats, rooms, and teachers automatically.',
+      outcome: 'Turns 3 days of spreadsheet tears into 2 seconds of peace.',
+      highlights: 'Handles 200,000+ students · Separates branch buddies · Balances tired teachers\' shifts',
+    },
     tags: ['Java', 'Svelte', 'Electron', 'Node.js'],
     preview: '/assets/examdesk.gif',
     github: 'https://github.com/mcspidey95/ExamDesk',
@@ -154,6 +196,7 @@ export const experience = [
     location: 'Bengaluru',
     role: 'AI Engineer',
     period: 'Aug 2025 - Present',
+    dumdum: 'I herd 28 angry robot-brain folders, taught a search engine to remember stuff like an elephant (90% less hoarding), made a talking 3D glowy ball, and got paid to tell interns "have you tried turning it off and on again?"',
     points: [
       'Core AI architect across a 28-repository enterprise AI fleet spanning voice agents, cognitive RAG, legal/statutory intelligence, and workflow automation.',
       'Architected NeuroVault, a human-associative memory engine on Elasticsearch 8.x that replaces bloated verbatim chunking with high-density mental anchors — cutting vector storage by 90% while boosting natural recall.',
@@ -168,6 +211,7 @@ export const experience = [
     location: 'Bengaluru',
     role: 'Python Developer Intern',
     period: 'Apr 2025 - Jul 2025',
+    dumdum: 'Wrote tiny snake scripts to click buttons for me so fast they panicked and gave me a real job in 3 months.',
     points: [
       'Built backend Python automation services, targeted RPA/Selenium harvesters, and document ingestion pipelines.',
       'Converted to full-time AI Engineer within 3 months based on production delivery speed.',
@@ -181,6 +225,7 @@ export const education = [
     degree: 'BTech in Computer Science & Engineering (AI & ML)',
     period: '2021 - 2025',
     grade: '8.51 CGPA',
+    dumdum: 'Survived 4 years of college math, beat 2,400 kids at sorting lists really fast, and won a hackathon about puddles.',
     highlights: [
       'Course Topper in Data Structures & Algorithms (1st among 2,400 students).',
       'Winner of AIdeathon at Global Academy of Technology (AI waterlogging management).',
@@ -191,18 +236,22 @@ export const education = [
 export const capabilityGroups = [
   {
     title: 'AI & Agents',
+    dumdum: 'Magic autocomplete boxes, fancy math, and begging GPUs not to crash.',
     items: ['LLM Orchestration', 'LangChain', 'Prompt & Schema Design', 'RAG & Local Inference', 'TensorFlow / Keras', 'Stable Diffusion'],
   },
   {
     title: 'Full-Stack & Mobile',
+    dumdum: 'Making rectangles look pretty on phones and laptops.',
     items: ['TypeScript / JS', 'Astro / React / Svelte', 'Node.js', 'Kotlin / Jetpack Compose', 'Electron', '.NET / C#'],
   },
   {
     title: 'Systems & Infra',
+    dumdum: 'Linux wizardry, duct-taped wires, and padlocking everything so hackers cry.',
     items: ['Arch Linux', 'Systemd & PipeWire', 'Tailscale Mesh', 'WebSockets', 'Git & GitHub Actions', 'Zero-Trust Tooling'],
   },
   {
     title: 'Languages',
+    dumdum: 'Snek (Python), curly-brace soup (TS/Java), and yelling at databases (SQL).',
     items: ['Python', 'TypeScript', 'Java', 'Kotlin', 'C / C#', 'SQL'],
   },
 ];

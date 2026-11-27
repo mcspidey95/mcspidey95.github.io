@@ -5,6 +5,7 @@ import { site, projects } from '../data/site';
   <div class="palette" role="dialog" aria-modal="true" aria-label="Command palette">
     <input class="palette-input" id="palette-input" type="text" placeholder="Type a command or project... (Esc to close)" autocomplete="off" />
     <ul class="palette-list" id="palette-list">
+      <li><button type="button" class="palette-item" data-cmd="dumdum"><span>Toggle Dumdum Mode (Caveman English)</span><span class="kbd">D</span></button></li>
       <li><button type="button" class="palette-item" data-cmd="alter"><span>Toggle Alter-Ego / Spider-Sense Mode</span><span class="kbd">S</span></button></li>
       <li><button type="button" class="palette-item" data-cmd="resume"><span>Open Resume PDF</span><span class="kbd">PDF</span></button></li>
       <li><button type="button" class="palette-item" data-cmd="email"><span>Copy Email ({site.email})</span><span class="kbd">Copy</span></button></li>
@@ -17,7 +18,7 @@ import { site, projects } from '../data/site';
 
 <script>
   import { onPage, scrollToTarget } from '../engine';
-  import { toggleAlterEgo } from '../motion/setup';
+  import { toggleAlterEgo, toggleDumdumMode } from '../motion/setup';
   import { site } from '../data/site';
 
   onPage(() => {
@@ -56,7 +57,8 @@ import { site, projects } from '../data/site';
       btn.addEventListener('click', async () => {
         const cmd = btn.dataset.cmd;
         close();
-        if (cmd === 'alter') toggleAlterEgo();
+        if (cmd === 'dumdum') toggleDumdumMode();
+        else if (cmd === 'alter') toggleAlterEgo();
         else if (cmd === 'resume') window.open(site.resume, '_blank');
         else if (cmd === 'email') await navigator.clipboard?.writeText(site.email).catch(() => {});
       });

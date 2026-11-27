@@ -48,6 +48,7 @@ const jsonLd = {
       document.documentElement.classList.add('js');
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
       if (sessionStorage.getItem('valaris-alter') === 'spidey') document.documentElement.setAttribute('data-alter', 'spidey');
+      if (sessionStorage.getItem('valaris-dumdum') === 'on') document.documentElement.setAttribute('data-dumdum', 'on');
     </script>
     <ClientRouter fallback="swap" />
   </head>
@@ -58,6 +59,10 @@ const jsonLd = {
     <div id="cursor" transition:persist="cursor" aria-hidden="true"><span data-cursor-label></span></div>
     <Loader />
     <Header />
+    <div id="dumdum-banner" class="dumdum-banner" role="status" aria-live="polite" hidden>
+      <span class="dumdum-banner__badge">DUMDUM MODE ON</span>
+      <span>Scroll down — slapping sticky notes over all the nerdy tech jargon.</span>
+    </div>
     <main id="main" tabindex="-1">
       <slot />
     </main>

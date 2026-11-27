@@ -17,7 +17,7 @@ import { site, projects, experience, education, capabilityGroups } from '../data
           <span>I am</span>
           <span class="accent mono"><span data-role-cycle>{site.roles[0]}</span><span class="role-cursor" aria-hidden="true"></span></span>
         </div>
-        <p class="hero-desc" data-reveal="up" data-intro data-delay="0.22">
+        <p class="hero-desc" data-reveal="up" data-intro data-delay="0.22" data-dumdum={site.dumdumDesc}>
           {site.description}
         </p>
         <div class="hero-cta" data-reveal="up" data-intro data-delay="0.3">
@@ -89,7 +89,7 @@ import { site, projects, experience, education, capabilityGroups } from '../data
               <span class="timeline-period">{job.period}</span>
             </div>
             <div class="timeline-org">{job.company} · {job.location}</div>
-            <ul class="timeline-list">
+            <ul class="timeline-list" data-dumdum={job.dumdum}>
               {job.points.map((pt) => <li>{pt}</li>)}
             </ul>
           </article>
@@ -110,7 +110,7 @@ import { site, projects, experience, education, capabilityGroups } from '../data
               <span class="timeline-period">{edu.period}</span>
             </div>
             <div class="timeline-org">{edu.degree} · <strong class="accent">{edu.grade}</strong></div>
-            <ul class="timeline-list">
+            <ul class="timeline-list" data-dumdum={edu.dumdum}>
               {edu.highlights.map((h) => <li>{h}</li>)}
             </ul>
           </article>
@@ -131,7 +131,7 @@ import { site, projects, experience, education, capabilityGroups } from '../data
         {capabilityGroups.map((grp) => (
           <div class="cap-card" data-reveal="up">
             <h3 class="cap-title">{grp.title}</h3>
-            <ul class="cap-items">
+            <ul class="cap-items" data-dumdum={grp.dumdum}>
               {grp.items.map((item) => <li>{item}</li>)}
             </ul>
           </div>

@@ -13,6 +13,8 @@ export function start(setup?: () => void) {
     syncFlags();
     const alter = sessionStorage.getItem('valaris-alter');
     if (alter) document.documentElement.setAttribute('data-alter', alter);
+    const dumdum = sessionStorage.getItem('valaris-dumdum');
+    if (dumdum === 'on') document.documentElement.setAttribute('data-dumdum', 'on');
     document.getElementById('loader')?.remove();
   });
   document.addEventListener('astro:page-load', () => {

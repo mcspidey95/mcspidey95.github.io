@@ -15,6 +15,18 @@ const path = Astro.url.pathname;
       <a class="draw" href={site.resume} target="_blank" rel="noreferrer">Resume</a>
     </nav>
     <div class="header-actions">
+      <button type="button" class="pill-btn pill-btn--dumdum" data-dumdum-toggle aria-pressed="false" title="Toggle Dumdum Mode (D) — Caveman translations">
+        <svg class="derp-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="8.5" cy="9.5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="7.8" cy="10.1" r="0.9" fill="currentColor"/>
+          <circle cx="15.8" cy="8.8" r="2.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="16.7" cy="8.2" r="0.9" fill="currentColor"/>
+          <path d="M8 15.5c1.5 1.8 4.2 1.2 6.5-.2 1-.6 2-.3 2 .8 0 1.2-1 2.2-1.8 2.2-.8 0-1.2-.8-1.2-1.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span>Dumdum</span>
+        <span class="kbd">D</span>
+      </button>
       <button type="button" class="pill-btn" data-alter-toggle aria-pressed="false" title="Toggle Spider-Sense mode (S)">
         <span>Spidey</span>
         <span class="kbd">S</span>
