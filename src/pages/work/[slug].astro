@@ -18,9 +18,15 @@ const { project, next } = Astro.props;
       <h1 class="case-title" data-split="lines" data-intro>{project.title}</h1>
       <p class="hero-desc" data-reveal="up" data-intro data-delay="0.12">{project.summary}</p>
       <div class="hero-cta" data-reveal="up" data-intro data-delay="0.2">
-        {project.github ? (
-          <a class="btn" href={project.github} target="_blank" rel="noreferrer" data-fill>
+        {project.liveUrl && (
+          <a class="btn" href={project.liveUrl} target="_blank" rel="noreferrer" data-fill>
             <span class="btn__fill" aria-hidden="true"></span>
+            <span>Live Demo &#8599;</span>
+          </a>
+        )}
+        {project.github ? (
+          <a class={project.liveUrl ? 'btn btn--ghost' : 'btn'} href={project.github} target="_blank" rel="noreferrer" data-fill={!project.liveUrl}>
+            {!project.liveUrl && <span class="btn__fill" aria-hidden="true"></span>}
             <span>View on GitHub</span>
           </a>
         ) : (
@@ -51,20 +57,34 @@ const { project, next } = Astro.props;
     </div>
   </article>
 
+  <section class="wrap case-story" data-reveal="up">
+    <div class="section-kicker" style="margin-bottom: 0.75rem;">The Spark // Why It Exists</div>
+    <p class="case-story-text">{project.story}</p>
+  </section>
+
   <section class="wrap case-body">
     <div class="case-block" data-reveal="up">
-      <h2>Problem</h2>
+      <h2>The Problem</h2>
       <p class="muted">{project.problem}</p>
     </div>
     <div class="case-block" data-reveal="up" data-delay="0.08">
-      <h2>Architecture &amp; Build</h2>
+      <h2>How I Built It</h2>
       <p class="muted">{project.solution}</p>
     </div>
     <div class="case-block" data-reveal="up" data-delay="0.16">
-      <h2>Outcome</h2>
+      <h2>Outcome &amp; Impact</h2>
       <p class="muted">{project.outcome}</p>
     </div>
   </section>
+
+  {project.highlights?.length > 0 && (
+    <section class="wrap case-highlights" data-reveal="up">
+      <div class="section-kicker" style="margin-bottom: 1rem;">Key Highlights</div>
+      <ul class="timeline-list">
+        {project.highlights.map((h) => <li>{h}</li>)}
+      </ul>
+    </section>
+  )}
 
   <section class="section">
     <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">

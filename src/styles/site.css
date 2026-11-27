@@ -202,6 +202,11 @@ html[data-alter='spidey'] .portrait-frame .img-alter { opacity: 1; transform: sc
 .tag-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
 .tag { padding: 0.28rem 0.65rem; border: 1px solid var(--c-line); border-radius: var(--radius); font-family: var(--f-mono); font-size: var(--t-xs); color: var(--c-muted); }
 
+
+.case-story { padding-block: 3rem 2.5rem; border-bottom: 1px solid var(--c-line); }
+.case-story-text { max-width: 74ch; font-size: var(--t-m); line-height: 1.6; color: var(--c-fg); }
+.case-highlights { padding-block: 2.5rem; border-bottom: 1px solid var(--c-line); }
+
 /* Footer */
 .site-footer { padding-block: clamp(3.5rem, 8vh, 5.5rem) 2.5rem; }
 .footer-cta { font-size: var(--t-xl); font-weight: 600; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
