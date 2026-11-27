@@ -46,11 +46,13 @@ function slapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement,
 }
 
 function unslapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement) {
-  gsap.killTweensOf([note, hand, host]);
+  gsap.killTweensOf([note, hand]);
+  if (host.dataset.slapped === '1') {
+    gsap.set(host, { clearProps: 'rotate' });
+  }
   host.dataset.slapped = '0';
   host.dataset.peeled = '0';
   host.classList.remove('is-slapped');
-  gsap.set(host, { clearProps: 'rotate' });
   hand.hidden = true;
   hand.style.display = 'none';
   note.hidden = true;
