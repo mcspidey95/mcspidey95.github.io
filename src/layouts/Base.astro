@@ -48,7 +48,7 @@ const jsonLd = {
       document.documentElement.classList.add('js');
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
       if (sessionStorage.getItem('valaris-alter') === 'spidey') document.documentElement.setAttribute('data-alter', 'spidey');
-      if (sessionStorage.getItem('valaris-dumdum') === 'on') document.documentElement.setAttribute('data-dumdum', 'on');
+      if (sessionStorage.getItem('valaris-dumdum') === 'on') document.documentElement.setAttribute('data-dumdum-mode', 'on');
     </script>
     <ClientRouter fallback="swap" />
   </head>

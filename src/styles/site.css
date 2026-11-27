@@ -319,9 +319,9 @@ html[data-alter=spidey] .portrait-frame .pixel-hud.img-alter { opacity: 1; trans
   text-transform: uppercase; color: #854d0e;
 }
 .dumdum-popover[hidden],
-html:not([data-dumdum='on']) .dumdum-popover,
-html:not([data-dumdum='on']) .sticky-note,
-html:not([data-dumdum='on']) .slap-hand,
+html:not([data-dumdum-mode='on']) .dumdum-popover,
+html:not([data-dumdum-mode='on']) .sticky-note,
+html:not([data-dumdum-mode='on']) .slap-hand,
 .sticky-note[hidden],
 .slap-hand[hidden] {
   display: none !important;

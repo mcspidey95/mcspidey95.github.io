@@ -71,7 +71,7 @@ function syncDumdumOnPage(active: boolean) {
   dumdumObserver?.disconnect();
   dumdumObserver = null;
 
-  const hosts = [...document.querySelectorAll<HTMLElement>('[data-dumdum]')];
+  const hosts = [...document.querySelectorAll<HTMLElement>('main [data-dumdum]')];
   hosts.forEach((host, idx) => {
     if (!host.classList.contains('dumdum-host')) {
       host.classList.add('dumdum-host');
@@ -155,10 +155,10 @@ function flashDumdumPopover() {
 
 export function toggleDumdumMode(force?: boolean) {
   const html = document.documentElement;
-  const current = html.getAttribute('data-dumdum') === 'on';
+  const current = html.getAttribute('data-dumdum-mode') === 'on';
   const next = force ?? !current;
-  if (next) html.setAttribute('data-dumdum', 'on');
-  else html.removeAttribute('data-dumdum');
+  if (next) html.setAttribute('data-dumdum-mode', 'on');
+  else html.removeAttribute('data-dumdum-mode');
   sessionStorage.setItem('valaris-dumdum', next ? 'on' : '');
   syncDumdumOnPage(next);
   if (next && !current) flashDumdumPopover();
@@ -289,7 +289,7 @@ export function setupMotion() {
       off.push(() => btn.removeEventListener('click', click));
     });
 
-    syncDumdumOnPage(document.documentElement.getAttribute('data-dumdum') === 'on');
+    syncDumdumOnPage(document.documentElement.getAttribute('data-dumdum-mode') === 'on');
 
     document.querySelectorAll<HTMLElement>('[data-alter-toggle]').forEach((btn) => {
       const click = () => toggleAlterEgo();
