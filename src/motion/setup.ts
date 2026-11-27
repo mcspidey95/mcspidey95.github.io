@@ -13,20 +13,23 @@ const HAND_SVG = `<svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="t
 </svg>`;
 
 function slapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement, idx: number) {
-  if (host.dataset.slapped === '1') return;
+  if (host.dataset.slapped === '1' || host.dataset.peeled === '1') return;
   host.dataset.slapped = '1';
   const tilt = (idx % 2 === 0 ? -1.4 : 1.3);
 
+  note.hidden = false;
+  note.style.display = 'flex';
+
   if (prefersReducedMotion()) {
     host.classList.add('is-slapped');
-    note.hidden = false;
     gsap.set(note, { xPercent: -50, yPercent: -50, opacity: 1, scale: 1, rotate: tilt });
     return;
   }
 
-  note.hidden = false;
   hand.hidden = false;
+  hand.style.display = 'block';
 
+  gsap.killTweensOf([note, hand, host]);
   gsap.timeline()
     .set(note, { xPercent: -50, yPercent: -50, opacity: 0, scale: 1.18, rotate: tilt * 2 })
     .fromTo(hand,
@@ -36,29 +39,32 @@ function slapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement,
     .add(() => { host.classList.add('is-slapped'); })
     .to(note, { opacity: 1, scale: 1, rotate: tilt, duration: 0.22, ease: 'back.out(1.7)' }, '<')
     .fromTo(host, { rotate: tilt * 0.8 }, { rotate: 0, duration: 0.35, ease: 'elastic.out(1, 0.4)' }, '<')
-    .to(hand, { opacity: 0, x: 36, y: -36, scale: 1.15, duration: 0.22, ease: 'power2.out', onComplete: () => { hand.hidden = true; } }, '+=0.06');
+    .to(hand, {
+      opacity: 0, x: 36, y: -36, scale: 1.15, duration: 0.22, ease: 'power2.out',
+      onComplete: () => { hand.hidden = true; hand.style.display = 'none'; }
+    }, '+=0.06');
 }
 
 function unslapStickyNote(host: HTMLElement, note: HTMLElement, hand: HTMLElement) {
+  gsap.killTweensOf([note, hand, host]);
   host.dataset.slapped = '0';
+  host.dataset.peeled = '0';
   host.classList.remove('is-slapped');
+  gsap.set(host, { clearProps: 'rotate' });
   hand.hidden = true;
-  if (note.hidden) return;
-  if (prefersReducedMotion()) {
-    note.hidden = true;
-    return;
-  }
-  gsap.to(note, {
-    opacity: 0, y: -14, scale: 0.92, duration: 0.2, ease: 'power2.in',
-    onComplete: () => { note.hidden = true; gsap.set(note, { y: 0 }); }
-  });
+  hand.style.display = 'none';
+  note.hidden = true;
+  note.style.display = 'none';
 }
 
 let dumdumObserver: IntersectionObserver | null = null;
 
 function syncDumdumOnPage(active: boolean) {
   const banner = document.getElementById('dumdum-banner');
-  if (banner) banner.hidden = !active;
+  if (banner) {
+    banner.hidden = !active;
+    banner.style.display = active ? 'flex' : 'none';
+  }
   document.querySelectorAll<HTMLElement>('[data-dumdum-toggle]').forEach((btn) => {
     btn.setAttribute('aria-pressed', String(active));
   });
@@ -74,23 +80,47 @@ function syncDumdumOnPage(active: boolean) {
     let note = host.querySelector<HTMLElement>(':scope > .sticky-note');
     let hand = host.querySelector<HTMLElement>(':scope > .slap-hand');
     if (!note) {
-      note = document.createElement('div');
+      note = document.createElement('button');
+      note.type = 'button';
       note.className = 'sticky-note';
       note.hidden = true;
-      note.innerHTML = `<span class="sticky-note__tag">DUMDUM TRANSLATION</span><span></span>`;
-      note.querySelector('span:last-child')!.textContent = host.dataset.dumdum || '';
+      note.style.display = 'none';
+      note.title = 'Click to peel off and read the real text';
+      note.innerHTML = `<span class="sticky-note__head"><span class="sticky-note__tag">DUMDUM TRANSLATION</span><span class="sticky-note__peel">click to peel ×</span></span><span class="sticky-note__body"></span>`;
+      note.querySelector('.sticky-note__body')!.textContent = host.dataset.dumdum || '';
+      note.addEventListener('click', (e) => {
+        e.stopPropagation();
+        host.dataset.peeled = '1';
+        host.dataset.slapped = '0';
+        host.classList.remove('is-slapped');
+        if (prefersReducedMotion()) {
+          note!.hidden = true;
+          note!.style.display = 'none';
+        } else {
+          gsap.to(note!, {
+            opacity: 0, y: -16, scale: 0.9, duration: 0.2, ease: 'power2.in',
+            onComplete: () => {
+              note!.hidden = true;
+              note!.style.display = 'none';
+              gsap.set(note!, { y: 0 });
+            }
+          });
+        }
+      });
       host.appendChild(note);
     }
     if (!hand) {
       hand = document.createElement('div');
       hand.className = 'slap-hand';
       hand.hidden = true;
+      hand.style.display = 'none';
       hand.innerHTML = HAND_SVG;
       host.appendChild(hand);
     }
     if (!active) {
       unslapStickyNote(host, note, hand);
     } else {
+      host.dataset.peeled = '0';
       host.dataset.dumdumIdx = String(idx);
     }
   });
@@ -106,7 +136,7 @@ function syncDumdumOnPage(active: boolean) {
         if (note && hand) slapStickyNote(host, note, hand, idx);
         dumdumObserver?.unobserve(host);
       });
-    }, { threshold: 0.25 });
+    }, { threshold: 0.15 });
     hosts.forEach((h) => dumdumObserver!.observe(h));
   }
 }

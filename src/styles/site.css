@@ -345,6 +345,15 @@ html:not([data-dumdum='on']) .slap-hand,
   background: linear-gradient(225deg, rgba(0,0,0,0.12) 50%, #eab308 50%);
   pointer-events: none;
 }
+.sticky-note { text-align: left; cursor: pointer; }
+.sticky-note__head {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; width: 100%;
+}
+.sticky-note__peel {
+  font-family: var(--f-mono); font-size: 0.62rem; font-weight: 600;
+  color: #a16207; opacity: 0.85;
+}
+.sticky-note:hover .sticky-note__peel { color: #1e293b; opacity: 1; }
 .sticky-note__tag {
   display: inline-flex; align-items: center; gap: 0.35rem;
   font-family: var(--f-mono); font-size: 0.65rem; font-weight: 700;
