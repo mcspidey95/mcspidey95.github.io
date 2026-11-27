@@ -209,6 +209,10 @@ export function setupMotion() {
         toggleDumdumMode();
       }
     });
+    document.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement)?.closest('[data-dumdum-toggle]');
+      if (btn) toggleDumdumMode();
+    });
   }
 
   if (!alterListenerWired) {
@@ -217,6 +221,10 @@ export function setupMotion() {
       if (e.key.toLowerCase() === 's' && !e.metaKey && !e.ctrlKey && !['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement)?.tagName)) {
         toggleAlterEgo();
       }
+    });
+    document.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement)?.closest('[data-alter-toggle]');
+      if (btn) toggleAlterEgo();
     });
   }
 
@@ -285,18 +293,10 @@ export function setupMotion() {
       }
     }
 
-    document.querySelectorAll<HTMLElement>('[data-dumdum-toggle]').forEach((btn) => {
-      const click = () => toggleDumdumMode();
-      btn.addEventListener('click', click);
-      off.push(() => btn.removeEventListener('click', click));
-    });
-
     syncDumdumOnPage(document.documentElement.getAttribute('data-dumdum-mode') === 'on');
-
+    const isSpideyNow = document.documentElement.getAttribute('data-alter') === 'spidey';
     document.querySelectorAll<HTMLElement>('[data-alter-toggle]').forEach((btn) => {
-      const click = () => toggleAlterEgo();
-      btn.addEventListener('click', click);
-      off.push(() => btn.removeEventListener('click', click));
+      btn.setAttribute('aria-pressed', String(isSpideyNow));
     });
 
     // Role typewriter (types + backspaces on one clean line)

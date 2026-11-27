@@ -47,7 +47,10 @@ import { site, projects } from '../data/site';
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape' && !backdrop.hidden) close(); };
     const onBackClick = (e: MouseEvent) => { if (e.target === backdrop) close(); };
 
-    document.querySelectorAll('[data-palette-open]').forEach((b) => b.addEventListener('click', open));
+    const onPaletteBtn = (e: MouseEvent) => {
+      if ((e.target as HTMLElement)?.closest('[data-palette-open]')) open();
+    };
+    document.addEventListener('click', onPaletteBtn);
     window.addEventListener('valaris:palette-toggle', toggle);
     input.addEventListener('input', onInput);
     addEventListener('keydown', onKey);
@@ -71,6 +74,7 @@ import { site, projects } from '../data/site';
       input.removeEventListener('input', onInput);
       removeEventListener('keydown', onKey);
       backdrop.removeEventListener('click', onBackClick);
+      document.removeEventListener('click', onPaletteBtn);
     };
   });
 </script>
